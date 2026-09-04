@@ -387,11 +387,49 @@ El concepto de *tramados institucionales ad hoc* es formulado por *Cao y Blutman
 
 La Poligobernanza postula la conformación de *arreglos institucionales dinámicos, flexibles y temporales* (adhocracias y estructuras matriciales), donde organismos estatales, gobiernos locales, universidades y comunidades se articulan en red en función de metas concretas. Como analiza *Jorge Hintze (2018)*, estas modalidades por proyecto/programa permiten movilizar recursos interdisciplinarios y brindar respuestas rápidas a demandas de urgencia territorial sin necesidad de alterar la macroestructura burocrática permanente del organismo.
 
+#pagebreak()
 === B. Evidencia Empírica Territorial: El Rol Articulador de Extensión y Ciencia y Técnica en el CURZAS
 
 La estructura funcional del CURZAS ratifica plenamente este funcionamiento reticular. Frente a los dilatados tiempos administrativos y las deliberaciones reglamentarias de los Departamentos Académicos disciplinares (*Humanidades, Psicopedagogía, Administración, Ciencia y Técnica*), son las *Secretarías de Extensión y de Ciencia y Técnica / Posgrado* las que quiebran el aislamiento estamental y configuran *tramados institucionales ad hoc*:
 
-1. *Proyecto Nodos Regionales del CURZAS (Red Territorial Descentralizada):* La UNCo consolidó y desplegó una red institucional descentralizada conformada por *10 nodos regionales* estratégicos en el territorio rionegrino: *Ingeniero Jacobacci, Maquinchao, Los Menucos, Sierra Colorada, Ramos Mexía, Valcheta, San Antonio Oeste, Sierra Grande, General Conesa y Río Colorado* (Noticias Río Negro, 2026). A través de convenios de cogestión con municipios locales y comisiones de fomento, y mediante la designación por concurso de *Asistentes Técnico-Pedagógicos locales*, el CURZAS acerca ofertas académicas territorializadas y carreras de grado —tales como la *Licenciatura en Recursos Humanos (Ciclo de Complementación Curricular)* y la *Licenciatura en Arte y Sociedad*—, adaptando la presencia universitaria a la dispersión geográfica y conectando las distintas microrregiones provinciales con la sede central de Viedma.
+1. *Proyecto Nodos Regionales del CURZAS (Red Territorial Descentralizada):* La UNCo consolidó y desplegó una red institucional descentralizada conformada por *10 nodos regionales* estratégicos en el territorio rionegrino (Noticias Río Negro, 2026). A través de convenios de cogestión con municipios locales y comisiones de fomento, y mediante la designación por concurso de *Asistentes Técnico-Pedagógicos locales*, el CURZAS acerca ofertas académicas territorializadas y carreras de grado, adaptando la presencia universitaria a la dispersión geográfica y conectando las distintas microrregiones provinciales con la sede central de Viedma:
+
+  #v(1pt)
+  #align(center)[
+    #block(
+      width: 100%,
+      breakable: false,
+      fill: bg-card,
+      stroke: 0.5pt + border-subtle,
+      radius: 4pt,
+      inset: (x: 6pt, y: 4pt),
+      [
+        #table(
+          columns: (120pt, 1fr),
+          stroke: 0.3pt + border-subtle,
+          fill: (x, y) => if y == 0 { primary } else if calc.even(y) { rgb("#f8fafc") } else { white },
+          align: (left + horizon, left + horizon),
+          inset: (x: 7pt, y: 3.5pt),
+          table.header(
+            text(weight: "bold", fill: white, size: 8.2pt)[Eje Territorial y Académico],
+            text(weight: "bold", fill: white, size: 8.2pt)[Detalle Institucional]
+          ),
+          [#text(weight: "bold", fill: primary, size: 8.2pt)[10 Nodos Regionales]],
+          [#text(size: 8.2pt)[
+            • *Línea Sur:* Ingeniero Jacobacci, Maquinchao, Los Menucos, Sierra Colorada, Ramos Mexía y Valcheta. \
+            • *Zona Atlántica y Valles:* San Antonio Oeste, Sierra Grande, General Conesa y Río Colorado.
+          ]],
+          [#text(weight: "bold", fill: primary, size: 8.2pt)[Carreras Dictadas]],
+          [#text(size: 8.2pt)[
+            • *Licenciatura en Recursos Humanos* (Ciclo de Complementación Curricular) \
+            • *Licenciatura en Arte y Sociedad* \
+            • _Entre otras propuestas formativas de grado, ciclos y tecnicaturas del CURZAS._
+          ]]
+        )
+      ]
+    )
+  ]
+  #v(1pt)
 2. *Proyectos de Extensión Territorializados:* Un ejemplo paradigmático de la agenda extensionista del CURZAS es el proyecto *"Nodos en red: experiencias sustentables de producción para pequeños productores"* (liderado por docentes-investigadores del CURZAS como Mgtr. Nancy Osses y Esp. Silvia Martínez). Este dispositivo interviene directamente en territorio junto a pequeños productores de *Valcheta, San Antonio Oeste y General Conesa*, promoviendo la exploración de saberes previos, el acompañamiento técnico, la diversificación productiva y el agregado de valor en origen.
 3. *Mesas Técnicas Interinstitucionales y Emergencias Regionales:* Ante problemáticas socio-ambientales críticas (como la crisis hídrica o la vulnerabilidad de la ganadería ovina y caprina), las secretarías conforman mesas ad hoc temporales junto al Departamento Provincial de Aguas (DPA), el INTA y cooperativas rurales para implementar sistemas de captación de agua de lluvia y mejoras en el manejo forrajero.
 4. *Aporte de la Gobernanza Reticular (Aguilar Villanueva):* En estas experiencias, el CURZAS no impone soluciones tecnocráticas verticales (*top-down*), sino que se inserta como un nodo articulador en una red horizontal (*bottom-up*), donde el conocimiento científico-académico se negocia y coproduce con los saberes empíricos de las comunidades locales y la capacidad operativa de los gobiernos municipales.
