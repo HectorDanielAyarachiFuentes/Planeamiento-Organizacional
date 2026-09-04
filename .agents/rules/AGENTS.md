@@ -104,3 +104,18 @@ Para cada nueva actividad o trabajo práctico (`actividad_XX`):
 
 * **Idioma:** Español neutro/argentino, profesional y pedagógico.
 * **Concisión:** Explicaciones claras, enlaces directos a archivos (`[nombre](file:///...)`) y confirmación de compilaciones exitosas.
+
+---
+
+## 🏷️ 7. Mensajes de Confirmación y Control de Versiones (Git Commits)
+
+* **Idioma Obligatorio:** Todos los mensajes de commit generados o propuestos deben redactarse exclusivamente en **español**.
+* **Estándar:** Utilizar el formato *Conventional Commits*:
+  * `feat:` para nuevas características, documentos o entregables.
+  * `fix:` para correcciones de errores, sintaxis o inconsistencias.
+  * `docs:` para actualizaciones de documentación, bibliografía o consignas.
+  * `refactor:` para reestructuración de archivos, renombrado o mejoras de maquetación.
+  * `test:` para scripts de validación, pruebas o compilación.
+  * `chore:` para tareas de mantenimiento, configuración o limpieza.
+* **Estructura y Tono:** Claros, descriptivos, en minúsculas y sin punto final en la primera línea.
+

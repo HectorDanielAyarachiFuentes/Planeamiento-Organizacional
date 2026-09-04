@@ -1,0 +1,7 @@
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Escribe siempre los mensajes de confirmación (commits) en español neutro, siguiendo el estándar Conventional Commits (feat, fix, docs, refactor, test, chore)."
+    }
+  ]
+}
