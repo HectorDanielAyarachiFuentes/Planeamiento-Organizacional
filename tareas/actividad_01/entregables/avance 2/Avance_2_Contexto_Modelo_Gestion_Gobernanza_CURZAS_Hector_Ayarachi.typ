@@ -92,6 +92,18 @@
   #v(3pt)
 ]
 
+#show heading.where(level: 4): it => [
+  #v(5pt)
+  #text(weight: "bold", size: 8.8pt, fill: rgb("#174075"))[#it.body]
+  #v(2.5pt)
+]
+
+#show heading.where(level: 5): it => [
+  #v(4pt)
+  #text(weight: "bold", size: 8.4pt, fill: rgb("#0f2d59"))[#it.body]
+  #v(2pt)
+]
+
 // ==============================================================================
 // 1. PORTADA INSTITUCIONAL FORMAL (LIMPIA Y SIN ÍNDICE EN PORTADA)
 // ==============================================================================
@@ -143,7 +155,7 @@
   #meta-row("Carrera:", "Licenciatura en Recursos Humanos")
   #meta-row("Institución Analizada:", "Complejo Universitario Regional Zona Atlántica y Sur (CURZAS)")
   #meta-row("Sede Académica:", "Viedma, Provincia de Río Negro")
-  #meta-row("Marco Teórico:", "Cao & Blutman, Aguilar Villanueva, Abal Medina, Oszlak, Hintze")
+  #meta-row("Marco Teórico:", "Bertranou, Matus, Cao & Blutman, Aguilar Villanueva, Abal Medina, Oszlak, Hintze")
   #meta-row("Ciclo Lectivo:", "2026")
   
   #align(bottom + center)[
@@ -485,13 +497,374 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
   *Conclusión:* Las Secretarías de Extensión y de Ciencia y Técnica del CURZAS *sí configuran tramados institucionales ad hoc y redes flexibles temporales*, funcionando como auténticas adhocracias matriciales que sortean la rigidez departamental y responden con celeridad a las urgencias socio-productivas de la Patagonia Norte.
 ]
 
+#pagebreak()
+=== C. Objetivo: Analizar la Viabilidad y las Capacidades Institucionales de la Entidad
+
+A efectos de cumplir con el objetivo de evaluar la viabilidad organizativa y las capacidades institucionales para sostener la presencia territorial y académica del *CURZAS (UNCo)*, el análisis se organiza de forma sistemática articulando los entregables específicos requeridos, el relevamiento de las fuentes documentales institucionales y el procesamiento de las preguntas guía situacionales.
+
+==== 1. Entregables Específicos
+
+===== A. Elaboración de una Matriz FODA Situada en el Contexto Actual del Organismo
+
+A partir del cotejo entre las memorias de gestión institucional y las variables críticas del entorno universitario y socio-productivo rionegrino, se presenta la siguiente *Matriz FODA situada*, que cruza los factores endógenos del CURZAS con el contexto actual:
+
+#v(2pt)
+
+#table(
+  columns: (1fr, 1fr),
+  stroke: 0.5pt + border-subtle,
+  fill: (x, y) => if y == 0 { primary } else if y == 2 { rgb("#174075") } else { bg-card },
+  inset: (x: 8pt, y: 6pt),
+  table.header(
+    text(weight: "bold", fill: white, size: 8.5pt)[FORTALEZAS (Factores Internos Positivos)],
+    text(weight: "bold", fill: white, size: 8.5pt)[DEBILIDADES (Factores Internos Operativos)]
+  ),
+  [
+    #text(size: 7.9pt)[
+      - *Presencia Territorial Activa:* Red descentralizada de *10 Nodos Regionales* en la Línea Sur y Zona Atlántica, democratizando el acceso a la educación superior.
+      - *Legitimidad Democrática e Institucional:* Co-gobierno cuatripartito participativo y funcionamiento regular de órganos colegiados de deliberación.
+      - *Estabilidad Laboral y Blindaje por CCT:* Plantillas docentes y nodocentes amparadas por Decretos N° 366/06 y 1246/15, asegurando continuidad y retención técnica.
+      - *Modernización de la Gestión Digital:* Adopción integral del ecosistema SIU (Guaraní, Mapuche, Diaguita) y tramitación electrónica por SUDOCU.
+      - *Oferta Formativa Estratégica:* Pertinencia en carreras de grado y ciclos de articulación (e.g. Lic. en Recursos Humanos) adaptadas a la demanda local.
+    ]
+  ],
+  [
+    #text(size: 7.9pt)[
+      - *Silos Informáticos y Falta de Interoperabilidad:* Ausencia de comunicación técnica automática con CONICET (SIGEVA) e INTA, con tareas manuales duplicadas.
+      - *Sobrecarga Administrativa en Sede Central:* Cuello de botella en personal para atender simultáneamente las demandas telemáticas y presenciales de los 10 nodos.
+      - *Rigidez de Estructuras Departamentales:* Resistencia disciplinar que enlentece la asignación flexible de recursos para proyectos matriciales ad hoc.
+      - *Brechas en Competencias Técnicas Digitales:* Deficiencias en analítica de datos, gestión integral por procesos y soporte de redes telemáticas complejas.
+      - *Infraestructura Edilicia y Tecnológica Prestada:* Dependencia funcional de convenios con municipios para el uso de dependencias en los nodos del interior.
+    ]
+  ],
+  table.cell(fill: primary)[
+    #text(weight: "bold", fill: white, size: 8.5pt)[OPORTUNIDADES (Factores Externos Positivos)]
+  ],
+  table.cell(fill: primary)[
+    #text(weight: "bold", fill: white, size: 8.5pt)[AMENAZAS (Factores Externos de Riesgo)]
+  ],
+  [
+    #text(size: 7.9pt)[
+      - *Creciente Demanda Formativa Regional:* Alto interés de comunidades y agentes públicos del interior rionegrino por ofertas a distancia y de extensión.
+      - *Alianzas de Poligobernanza Local:* Disposición favorable de intendencias y comisiones de fomento para cogestionar espacios y logística comarcal.
+      - *Cocreación Socio-Productiva:* Articulación extensionista con pequeños productores rurales y cooperativas comarcales (Proyecto *Nodos en Red*).
+      - *Fortalecimiento de la Educación Híbrida:* Consolidación de herramientas tecno-pedagógicas virtuales para mitigar el aislamiento territorial.
+    ]
+  ],
+  [
+    #text(size: 7.9pt)[
+      - *Severo Desfinanciamiento Presupuestario Nacional:* Inflación, congelamiento de partidas para funcionamiento e interrupción de obras públicas educativas.
+      - *Erosión Salarial y Conflictividad Gremial:* Pérdida del poder adquisitivo de salarios docentes y nodocentes ante la falta de paritarias nacionales homologadas.
+      - *Dispersión Geográfica y Déficit de Conectividad:* Extensas distancias logísticas en la estepa patagónica y severas fallas en el tendido de internet en parajes.
+      - *Volatilidad Regulatoria Nacional:* Retiro de programas de financiamiento universitario y restricciones para nuevas designaciones y cargos docentes.
+    ]
+  ]
+)
+
+#pagebreak()
+===== B. Desarrollo de un Mapeo de Actores Clave (Stakeholders) que Influyen en las Decisiones del Área de Recursos Humanos
+
+Las decisiones atinentes al empleo público, dotación y condiciones de trabajo en el CURZAS constituyen un campo de fuerzas donde interactúan múltiples actores con intereses y recursos de poder diferenciados:
+
+#v(2pt)
+
+#table(
+  columns: (1fr, 0.65fr, 0.65fr, 1.8fr, 1.3fr),
+  stroke: 0.4pt + border-subtle,
+  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
+  inset: (x: 5.5pt, y: 4.2pt),
+  table.header(
+    text(weight: "bold", fill: white, size: 7.6pt)[Actor Clave (Stakeholder)],
+    text(weight: "bold", fill: white, size: 7.6pt)[Ámbito],
+    text(weight: "bold", fill: white, size: 7.6pt)[Poder / Interés],
+    text(weight: "bold", fill: white, size: 7.6pt)[Intereses y Demandas Centrales],
+    text(weight: "bold", fill: white, size: 7.6pt)[Estrategia de Viabilidad / Gestión]
+  ),
+  [
+    *Gremio Nodocente (APUNC / FATUN)*
+  ],
+  [Interno / Gremial],
+  [Alto / Muy Alto],
+  [
+    #text(size: 7.4pt)[
+      Cumplimiento estricto del CCT 366/06; llamado a concursos de planta y ascensos; capacitación técnica situada; condiciones seguras de trabajo; defensa salarial.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Comisión Paritaria Particular permanente; acuerdos paritarios de criterios concursales; cogestión de programas de capacitación laboral.
+    ]
+  ],
+  [
+    *Gremio Docente (ADUNC / CEDIUNCO)*
+  ],
+  [Interno / Gremial],
+  [Alto / Muy Alto],
+  [
+    #text(size: 7.4pt)[
+      Aplicación efectiva del CCT 1246/15; regularización de interinatos mediante concursos de carrera docente; mayor dedicación horaria; recomposición salarial.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Mesa de Paritaria Docente Particular; planificación concertada de cronogramas de sustanciación de concursos de oposición y antecedentes.
+    ]
+  ],
+  [
+    *Consejo Directivo (CURZAS)*
+  ],
+  [Interno / Co-Gobierno],
+  [Muy Alto / Muy Alto],
+  [
+    #text(size: 7.4pt)[
+      Aprobación de la estructura organizativa, llamado a concursos, asignación de cargos entre departamentos y fiscalización del presupuesto operativo.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Construcción democrática de mayorías parlamentarias claustrales; fundamentación técnica y académica rigurosa de las propuestas de RR. HH.
+    ]
+  ],
+  [
+    *Decanato y Secretarías de Gestión*
+  ],
+  [Interno / Ejecutivo],
+  [Muy Alto / Alto],
+  [
+    #text(size: 7.4pt)[
+      Gobernabilidad administrativa; eficiencia en la asignación de recursos escasos; cobertura de funciones críticas para sostener la sede y los 10 nodos.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Liderazgo institucional dialógico; articulación interdepartamental; flexibilización de cargas de trabajo mediante proyectos transversales.
+    ]
+  ],
+  [
+    *Claustros Estudiantil y Graduados*
+  ],
+  [Interno / Académico],
+  [Medio / Alto],
+  [
+    #text(size: 7.4pt)[
+      Excelencia pedagógica docente; cumplimiento de fechas de exámenes; agilidad en ventanilla de trámites de títulos y equivalencias; soporte virtual fluido.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Atención por canales telemáticos multicanal (Guaraní/SUDOCU); fortalecimiento de tutorías académicas en los nodos regionales.
+    ]
+  ],
+  [
+    *Rectorado y Consejo Superior UNCo*
+  ],
+  [Central / Institucional],
+  [Muy Alto / Medio-Alto],
+  [
+    #text(size: 7.4pt)[
+      Coherencia normativa general universitaria; control del techo de masa salarial; homologación formal de concursos docentes y nodocentes.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Defensa fundada de las especificidades territoriales, distancias y complejidades nodales del CURZAS ante la administración central de Neuquén.
+    ]
+  ],
+  [
+    *Subsecretaría de Políticas Universitarias (SPU)*
+  ],
+  [Externo / Nacional],
+  [Muy Alto / Medio (Fiscal)],
+  [
+    #text(size: 7.4pt)[
+      Control y restricción de partidas salariales (inciso 1); verificación de plantas de personal; cumplimiento de parámetros de disciplina fiscal del Estado nacional.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Rigor en la rendición de cuentas financieras; actuación coordinada en el marco del Consejo Interuniversitario Nacional (CIN).
+    ]
+  ],
+  [
+    *Municipios y Comisiones de Fomento (Nodos)*
+  ],
+  [Externo / Territorial],
+  [Medio / Alto],
+  [
+    #text(size: 7.4pt)[
+      Presencia de Asistentes Técnico-Pedagógicos locales; estabilidad y continuidad de las cohortes de carreras universitarias en sus localidades.
+    ]
+  ],
+  [
+    #text(size: 7.4pt)[
+      Convenios de contraprestación operativa (cesión de espacios físicos, personal comunal de apoyo, facilitación de conectividad e insumos).
+    ]
+  ]
+)
+
+#pagebreak()
+===== C. Evaluación de las Capacidades Estatales del Organismo Siguiendo la Metodología de Bertranou
+
+A partir del marco formulado por *Julián Bertranou (2015)*, la capacidad institucional del Estado se define como la *aptitud de las estructuras y agentes públicos para problematizar demandas, construir consensos, organizar rutinas y transformar recursos en bienes y servicios públicos de calidad*. Bertranou operacionaliza este concepto en tres dimensiones:
+
+#v(2pt)
+
+*1. Capacidad Político-Relacional (Gobernabilidad Democrática y Construcción de Redes):*
+- *Definición:* Aptitud para interactuar con actores sociopolíticos, procesar pacíficamente conflictos, construir legitimidad y forjar alianzas estratégicas.
+- *Diagnóstico en el CURZAS:* *Desempeño Alto.* El co-gobierno canaliza y resuelve institucionalmente las demandas claustrales en el Consejo Directivo y en comisiones paritarias particulares con APUNC y ADUNC. A nivel externo, el organismo exhibe una extraordinaria aptitud relacional para tejer convenios con municipios para los *10 Nodos Regionales*, así como con el INTA y asociaciones de pequeños productores en proyectos sustentables.
+
+*2. Capacidad Administrativa / Organizacional (Rutinas, Procesos y Tecnologías de Gestión):*
+- *Definición:* Aptitud de los dispositivos burocráticos y procedimientos formales para tramitar actos y asignar recursos con celeridad, legalidad y transparencia.
+- *Diagnóstico en el CURZAS:* *Desempeño Medio-Alto.* Alta solvencia en el manejo normativo del empleo público, rendición financiera y digitalización por SUDOCU y SIU. Sin embargo, persisten dos puntos críticos: la falta de interoperabilidad automática con CONICET (SIGEVA) e INTA (silos de datos) y la sobrecarga administrativa en la sede central de Viedma para procesar demandas telemáticas de los 10 nodos.
+
+*3. Capacidad Técnica / Analítica (Saberes, Idoneidad y Competencias de la Plantilla):*
+- *Definición:* Calificación profesional, idoneidad técnica y habilidades cognitivas de la dotación de personal para diseñar, coordinar y evaluar políticas sustantivas.
+- *Diagnóstico en el CURZAS:* *Desempeño Medio.* Coexiste una alta calificación académica disciplinar en docentes y dominio de rutinas regladas en nodocentes, pero con deficiencias críticas ante la digitalización compleja y la educación a distancia territorializada.
+
+#pagebreak()
+==== 2. Qué Buscar: Plan Estratégico Institucional Vigente, Planes Operativos Anuales (POA) y Memorias de Gestión Anuales
+
+Para fundamentar empíricamente el diagnóstico institucional del CURZAS, se procedió a la búsqueda, relevamiento y análisis de los principales instrumentos de gestión y planificación de la UNCo:
+
+1. *Plan Estratégico Institucional Vigente de la UNCo:* Define las líneas directrices, misión, visión y ejes de desarrollo académico, científico y extensionista. Se constata que formalmente plantea metas de democratización del conocimiento y despliegue territorial, pero su diseño responde predominantemente a una formulación normativa centralizada ("top-down"), con escasa consideración explícita de los condicionamientos de viabilidad sociopolítica de las unidades académicas descentralizadas.
+2. *Planes Operativos Anuales (POA):* Traducen las metas estratégicas en programas presupuestarios anuales parametrizados. Exhiben una lógica de asignación cuantitativa de partidas y recursos, formulada bajo la hipótesis de previsibilidad macroeconómica, la cual resulta desbordada por los ciclos inflacionarios y los recortes del Estado nacional.
+3. *Memorias Anuales de Gestión:* Constituyen el registro documental de balance de las acciones cumplidas, ejecución presupuestaria, matrícula estudiantil y producción académica. En ellas se refleja con claridad la brecha entre las metas programadas formalmente y las contingencias reales: registran la sobrecarga administrativa en las secretarías, las dificultades operativas de los nodos del interior y el impacto del congelamiento de vacantes de personal.
+
+==== 3. Preguntas Guía para Recolectar
+
+===== A. ¿Los planes vigentes son normativos (rígidos) o adoptan un enfoque situacional (PES) que considera a los trabajadores como actores estratégicos?
+
+El relevamiento documental y funcional confirma que los planes vigentes son formalmente *normativos (rígidos)*, pero la dinámica operativa real exige de manera insoslayable un *enfoque situacional (PES)*:
+
+- *Crítica al Modelo Normativo Tradicional:* Como postuló *Carlos Matus*, la planificación tradicional normativa asume erróneamente un sistema estático y cerrado, donde quien planifica cree poseer el monopolio del poder y el control absoluto de las variables. En esta concepción abstracta, el plan es un "deber ser" lineal y los trabajadores son tratados como meros recursos administrativos pasivos ejecutores de reglamentos.
+- *Premisas Clave de la Planificación Estratégica Situacional (PES de Carlos Matus):*
+  1. *La situación como punto de partida:* No hay un diagnóstico objetivo único; la realidad es explicada por diferentes actores desde su propia posición, intereses y cuota de poder (explicación situacional).
+  2. *El juego social e incertidumbre:* El planificador convive en el tablero con la resistencia, intereses contrapuestos y alianzas de otros actores que también planifican y juegan.
+  3. *Procesamiento de problemas complejos:* En lugar de metas cuantitativas ciegas, la PES actúa sobre problemas concretos (brecha entre realidad observada y deseada) identificando sus causas nodales.
+  4. *Los trabajadores como actores estratégicos:* En el CURZAS, el personal docente y nodocente son actores estratégicos con representación en el co-gobierno, intereses propios y poder de veto en comisiones paritarias (APUNC y ADUNC). Todo planeamiento exige unir indisolublemente la *viabilidad técnica con la viabilidad política*.
+
+#pagebreak()
+*Matriz de los Cuatro Momentos de la Planificación Estratégica Situacional (PES de Carlos Matus):*
+
+#v(3pt)
+
+#table(
+  columns: (1.1fr, 0.75fr, 1.55fr, 1.8fr),
+  stroke: 0.4pt + border-subtle,
+  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
+  inset: (x: 6.5pt, y: 5.5pt),
+  table.header(
+    text(weight: "bold", fill: white, size: 7.8pt)[Momento de la PES (Carlos Matus)],
+    text(weight: "bold", fill: white, size: 7.8pt)[Interrogante Rector],
+    text(weight: "bold", fill: white, size: 7.8pt)[Fundamento Conceptual y Operativo],
+    text(weight: "bold", fill: white, size: 7.8pt)[Aplicación Situada en el CURZAS (UNCo)]
+  ),
+  [
+    *1. Momento Explicativo* \
+    #text(size: 7pt, fill: text-muted)[(Apreciación situacional)]
+  ],
+  [*¿Fue, es y será?*],
+  [
+    #text(size: 7.3pt)[
+      Indagación y selección de problemas complejos. Reconstrucción de causas nodales desde la perspectiva diferenciada de cada fuerza social. Rechazo del diagnóstico único tecnocrático.
+    ]
+  ],
+  [
+    #text(size: 7.3pt)[
+      Diagnóstico situado de problemas críticos: asfixia presupuestaria nacional, sobrecarga administrativa en sede Viedma, dispersión en 10 nodos y silos de datos no interoperables con CONICET/INTA.
+    ]
+  ],
+  [
+    *2. Momento Normativo* \
+    #text(size: 7pt, fill: text-muted)[(Diseño del horizonte)]
+  ],
+  [*¿Debiera ser?*],
+  [
+    #text(size: 7.3pt)[
+      Diseño de la situación-objetivo y formulación de la estrategia deseable. Construcción del programa direccional y operaciones para cerrar la brecha entre realidad observada y deseada.
+    ]
+  ],
+  [
+    #text(size: 7.3pt)[
+      Proyecto de un CURZAS descentralizado e inclusivo en la Línea Sur y Costa Atlántica, con co-gobierno transparente, oferta híbrida accesible y un Estado Plataforma interoperable.
+    ]
+  ],
+  [
+    *3. Momento Estratégico* \
+    #text(size: 7pt, fill: text-muted)[(Construcción de viabilidad)]
+  ],
+  [*¿Puedo hacer?*],
+  [
+    #text(size: 7.3pt)[
+      Cálculo de fuerzas en el juego social. Construcción articulada de viabilidad política (alianzas y neutralización de vetos), económica, institucional y cognitiva para vencer resistencias.
+    ]
+  ],
+  [
+    #text(size: 7.3pt)[
+      Concertación paritaria permanente con gremios APUNC y ADUNC; acuerdos de cogestión con intendencias locales (aportes logísticos) y articulación interinstitucional con INTA y DPA.
+    ]
+  ],
+  [
+    *4. Momento Táctico-Operacional* \
+    #text(size: 7pt, fill: text-muted)[(Acción y coyuntura)]
+  ],
+  [*¿Hacer?*],
+  [
+    #text(size: 7.3pt)[
+      Mediación entre el plan y la acción diaria en la coyuntura. Monitoreo continuo, evaluación de trayectorias y reajuste flexible del plan en tiempo real ante imprevistos del entorno.
+    ]
+  ],
+  [
+    #text(size: 7.3pt)[
+      Gestión cotidiana de cursadas telemáticas en nodos, resolución ágil de contingencias climáticas y de conectividad en la estepa, y reasignación de partidas ante la inflación nacional.
+    ]
+  ]
+)
+
+#v(4pt)
+
+#callout("Articulación Teórico-Práctica de la PES")[
+  *Conclusión del Análisis Situacional:* Como postula Matus, la planificación no es un ejercicio de cálculo aritmético sobre variables dadas, sino una *teoría del juego social*. La viabilidad del CURZAS no emana de la imposición vertical de reglamentos, sino de la capacidad directiva para articular la *viabilidad técnica* (calidad académica y solvencia digital) con la *viabilidad política* (procesamiento del conflicto claustral y negociación paritaria permanente).
+]
+
+#pagebreak()
+===== B. ¿Cuáles son las principales fortalezas y debilidades operativas manifestadas de forma interna (insumo directo para la matriz FODA)?
+
+El relevamiento operativo interno arroja las siguientes conclusiones que nutren directamente la Matriz FODA:
+- *Fortalezas Operativas Internas:* Presencia activa y descentralizada en *10 Nodos Regionales*; co-gobierno democrático cuatripartito consolidado; estabilidad laboral y derechos blindados por Convenios Colectivos de Trabajo (Decretos N° 366/06 y 1246/15); adopción exitosa del ecosistema informático SIU y expediente digital SUDOCU; y oferta académica pertinente (Licenciatura en Recursos Humanos, Ciclos de Grado).
+- *Debilidades Operativas Internas:* Persistencia de *silos informáticos* sin interoperabilidad con CONICET (SIGEVA) e INTA, con tareas manuales duplicadas; sobrecarga operativa y cuello de botella en la planta administrativa de la sede Viedma ante la demanda telemática de los nodos; rigidez departamental disciplinar frente a proyectos matriciales; y brechas en competencias técnicas digitales.
+
+===== C. ¿Existen deficiencias críticas detectadas en las competencias técnicas de las plantillas actuales (capacidad estatal)?
+
+El relevamiento empírico de las competencias laborales del personal docente y nodocente constata *cuatro deficiencias críticas*:
+1. *Brechas en Analítica de Datos y Gestión Digital:* En el personal nodocente predomina la carga de datos rutinaria, con escasas competencias en analítica de datos, tableros de gestión, interoperabilidad y ciberseguridad.
+2. *Asimetrías Pedagógicas para Entornos Híbridos:* En el cuerpo docente subsiste heterogeneidad en el dominio de herramientas tecno-pedagógicas y tutorías a distancia requeridas por el modelo de nodos territoriales.
+3. *Rigidez Escalafonaria:* El escalafón administrativo tradicional dificulta la incorporación ágil de nuevos perfiles tecnológicos de vanguardia (programadores, ingenieros de datos).
+4. *Necesidad de un Plan Situado de Capacitación Continua:* Se requiere diseñar en comisiones paritarias un plan específico que capacite en gobernanza digital, conectividad remota y gestión pública por resultados.
+
+#callout("Dictamen Integral de Viabilidad y Capacidades")[
+  *Conclusión:* El CURZAS ostenta una *robusta capacidad político-relacional* y una *eficiente capacidad administrativa procedimental*, pero su *capacidad técnica y analítica* enfrenta deficiencias operativas ante la digitalización compleja y la dispersión geográfica. La adopción de la *Planificación Estratégica Situacional (PES de Matus)* resulta imperativa para tratar a los trabajadores como actores estratégicos de coproducción y garantizar la viabilidad del proyecto universitario frente a las restricciones del contexto nacional.
+]
+
+#pagebreak()
 == 4. Síntesis y Conclusiones del Avance 2
 
-El diagnóstico del Avance 2 evidencia una marcada asimetría en la modernización del CURZAS:
-- En la *dimensión informacional y de gestión de datos*, persisten *silos cerrados y cargas manuales duplicadas* que impiden concretar un verdadero *Estado Plataforma* interoperable con CONICET e INTA.
-- En la *dimensión socio-territorial*, la institución demuestra una *destacada capacidad de poligobernanza reticular*, impulsada por las Secretarías de Extensión y Ciencia y Técnica a través del *Proyecto Nodos Regionales* (con sus 10 nodos en territorio provincial) y proyectos productivos territoriales (*Nodos en Red*).
+El análisis integral abordado a lo largo del Avance 2 articula los hallazgos en tres dimensiones nodales que definen la situación organizacional y las capacidades institucionales del *CURZAS (UNCo)*:
 
-El desafío estratégico futuro radica en superar esta dualidad: robustecer los tramados ad hoc territoriales dotándolos de una infraestructura digital de datos abiertos e interoperabilidad interinstitucional, afianzando al CURZAS como una Universidad Plataforma al servicio del desarrollo patagónico.
+1. *En la Dimensión Informacional e Interoperabilidad (Eje 1):*
+  Se constató que, pese al éxito en la digitalización interna de trámites con el ecosistema SIU y SUDOCU, *persiste un modelo fragmentado de silos informáticos*. La inexistencia de pasarelas API automatizadas e interoperables en tiempo real con organismos científicos estratégicos como CONICET (SIGEVA) e INTA reproduce tareas manuales duplicadas para los investigadores y obstaculiza la concreción de un auténtico *Estado Plataforma* en la región norpatagónica.
+
+2. *En la Dimensión Territorial y Poligobernanza Reticular (Eje 2):*
+  La institución demuestra una destacada y flexible *capacidad de respuesta adhocrática* a través de las Secretarías de Extensión y de Ciencia y Técnica. Mediante la conformación de *tramados institucionales ad hoc* y la consolidación de la *red descentralizada de 10 Nodos Regionales* en la Línea Sur y Costa Atlántica, el CURZAS rompe la lentitud y rigidez de los departamentos académicos tradicionales. Proyectos territoriales como *Nodos en Red* y las mesas técnicas comarcales expresan la potencia de la *gobernanza reticular* formulada por Aguilar Villanueva y la *poligobernanza* postulada por Cao y Blutman.
+
+3. *En la Dimensión de Viabilidad, Planificación y Capacidades Estatales (Eje 3):*
+  - *Superación del Paradigma Normativo hacia el Enfoque Situacional (PES de Matus):* Los planes institucionales formales (Plan Estratégico y POAs) conservan una matriz normativa rígida y lineal. Sin embargo, la gobernabilidad real del CURZAS demanda aplicar la *Planificación Estratégica Situacional*, en la cual los trabajadores docentes y nodocentes son reconocidos como *actores estratégicos vitales* con intereses propios, poder de veto paritario y capacidad de coproducción institucional.
+  - *Matriz FODA Situada:* Se identificó una institución con fortalezas notables (red de 10 nodos, arraigo territorial, co-gobierno democrático, estabilidad por CCT) y oportunidades de expansión socio-productiva local, pero amenazada por una asfixiante crisis presupuestaria nacional y limitada internamente por silos informáticos, sobrecarga administrativa y brechas de competencias técnicas.
+  - *Mapeo de Actores de Recursos Humanos:* La arena laboral se estructura sobre un equilibrio de fuerzas entre gremios (APUNC y ADUNC), órganos colegiados (Consejo Directivo y Superior), el Decanato y las regulaciones fiscales del Estado nacional (SPU), requiriendo acuerdos en paritarias locales permanentes para viabilizar cualquier reforma.
+  - *Evaluación de Capacidades Estatales (Bertranou):* Mientras que la *capacidad político-relacional* se destaca como alta y la *capacidad administrativa* como media-alta en rutinas regladas, la *capacidad técnica y analítica* exhibe deficiencias críticas en analítica de datos, gestión telemática remota y pedagogía virtual híbrida, profundizadas por la rigidez del régimen escalafonario para captar perfiles de vanguardia.
+
+*Dictamen Estratégico Final:*
+El reto primordial de planeamiento para el CURZAS reside en *articular su potencia de poligobernanza territorial con la modernización de sus capacidades técnicas y de interoperabilidad digital*. Solo transitando hacia una planificación estratégica situacional que empodere y capacite a su personal, y estructurándose como nodo en un Estado Plataforma, la universidad afianzará su misión democratizadora y productiva en la Patagonia Norte.
 
 #pagebreak()
 
@@ -518,12 +891,15 @@ El desafío estratégico futuro radica en superar esta dualidad: robustecer los 
   #set text(size: 8.7pt, fill: text-main)
   - *Abal Medina, Juan Manuel (2014).* _Manual de Administración Pública._ Buenos Aires: Ariel. Capítulos 1 y 5.
   - *Aguilar Villanueva, Luis F. (2006).* _Gobernanza y Gestión Pública._ México D.F.: Fondo de Cultura Económica.
+  - *Bertranou, Julián (2015).* _Capacidad estatal: revisión del concepto y algunos ejes de análisis y debate._ Revista Estado y Políticas Públicas, N° 4, FLACSO Argentina.
   - *Cao, Horacio y Blutman, Gustavo (2019).* _Continuidades y rupturas en las ideas sobre reforma y modernización del Estado._ Buenos Aires: INAP / Universidad de Buenos Aires.
   - *Cao, Horacio y Blutman, Gustavo (2021).* _Escenarios futuros para la administración pública: Poligobernanza y Neoweberianismo._ Documentos de Trabajo del INAP.
   - *CONICET (2009).* _Módulo de Interoperabilidad del Sistema Integral de Gestión y Evaluación (SIGEVA)._ Buenos Aires: Consejo Nacional de Investigaciones Científicas y Técnicas.
   - *CURZAS — Universidad Nacional del Comahue (2023).* _Avanza el proyecto Nodos CURZA UNCo Región Sur._ Área de Educación a Distancia y Nodos Territoriales. Disponible en: `https://web.curza.uncoma.edu.ar/educacion-distancia/nodos/avanza-el-proyecto-nodos-region-sur`.
   - *CURZAS — Universidad Nacional del Comahue (2024).* _Proyectos de Extensión: Nodos en red: experiencias sustentables de producción para pequeños productores (Dir. Mgtr. Nancy Osses et al.)._ Secretaría de Extensión y Transferencia. Disponible en: `https://web.curza.uncoma.edu.ar/extension/pe-proyectos`.
   - *Hintze, Jorge (2018).* _Gestión por procesos y diseño de estructuras en la administración pública: La articulación entre estructuras permanentes y proyectos temporales._ Buenos Aires: TOP / INAP.
+  - *Matus, Carlos (1993).* _Guía de análisis teórico de la Planificación Estratégica Situacional._ Caracas: Fundación Altadir / Fondo Editorial Altadir.
+  - *Matus, Carlos (2007).* _Teoría del juego social._ Lanús: Ediciones de la UNLa.
   - *Noticias Río Negro (2026).* _El CURZAS - UNCo abrió la preinscripción 2026 en Viedma y los 10 nodos regionales._ Disponible en: #link("https://noticiasrionegro.com.ar/contenido/88152/el-curzas-unco-abrio-la-preinscripcion-2026-en-viedma-y-los-10-nodos-regionales").
   - *Oszlak, Oscar (2020).* _El Estado en la era exponencial: Tecnologías disruptivas y gestión pública._ Buenos Aires: Editorial INAP.
   - *Universidad Nacional del Comahue (1993/2023).* _Estatuto de la Universidad Nacional del Comahue (Ordenanza N° 470/1993 y modificatorias)._ Neuquén / Viedma.
