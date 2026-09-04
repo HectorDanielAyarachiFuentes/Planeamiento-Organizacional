@@ -138,7 +138,7 @@
   #v(24pt)
   
   // Tabla de Metadatos del Documento
-  #meta-row("Estudiante:", "Héctor Daniel Ayarachi Fuentes")
+  #meta-row("Estudiante:", "Téc. Sup. en RR. HH. Héctor Daniel Ayarachi Fuentes")
   #meta-row("Equipo Docente:", "Mgter. Susana Lopez — Lic. Carlos Jauge")
   #meta-row("Carrera:", "Licenciatura en Recursos Humanos")
   #meta-row("Institución Analizada:", "Complejo Universitario Regional Zona Atlántica y Sur (CURZAS)")
@@ -152,7 +152,7 @@
 ]
 
 // ==============================================================================
-// 2. CUERPO DEL INFORME (PAGINACIÓN VISIBLE DESDE PÁGINA 2)
+// 2. HOJA DEDICADA: ÍNDICE GENERAL DE CONTENIDOS (DESPUÉS DE LA PORTADA)
 // ==============================================================================
 #counter(page).update(1)
 
@@ -175,7 +175,7 @@
     #grid(
       columns: (1fr, auto, 1fr),
       align: (left + horizon, center + horizon, right + horizon),
-      text(size: 8pt, fill: text-muted)[Héctor Daniel Ayarachi Fuentes],
+      text(size: 8pt, fill: text-muted)[Téc. Sup. en RR. HH. Héctor Daniel Ayarachi Fuentes],
       image("/assets/img/CURZAS.png", height: 13pt),
       text(size: 8pt, fill: text-muted)[
         #context [Página #counter(page).display("1") de #counter(page).final().at(0)]
@@ -183,6 +183,33 @@
     )
   ]
 )
+
+#v(15pt)
+
+#rect(
+  width: 100%,
+  fill: bg-card,
+  stroke: 0.5pt + border-subtle,
+  radius: 6pt,
+  inset: (x: 18pt, y: 18pt)
+)[
+  #text(weight: "bold", size: 12pt, fill: primary)[Índice General de Contenidos]
+  #v(6pt)
+  #line(length: 100%, stroke: 0.6pt + accent)
+  #v(12pt)
+  
+  #outline(
+    title: none,
+    depth: 2,
+    indent: 1.5em
+  )
+]
+
+#pagebreak()
+
+// ==============================================================================
+// 3. CUERPO DEL INFORME
+// ==============================================================================
 
 // ==============================================================================
 // SECCIÓN: AVANCE 1
@@ -472,6 +499,8 @@ El desafío estratégico futuro radica en superar esta dualidad: robustecer los 
 // 3. HOJA DEDICADA: BIBLIOGRAFÍA Y FUENTES ACADÉMICAS CONSOLIDADAS
 // ==============================================================================
 
+#heading(level: 1, outlined: true, bookmarked: true)[Bibliografía]
+
 #v(15pt)
 
 #rect(
@@ -507,29 +536,4 @@ El desafío estratégico futuro radica en superar esta dualidad: robustecer los 
     - Decretos N° 366/2006 y N° 1246/2015 (Convenios Colectivos de Trabajo Nodocente y Docente).
 ]
 
-#pagebreak()
 
-// ==============================================================================
-// 4. HOJA DEDICADA: ÍNDICE GENERAL DE CONTENIDOS (AL FINAL DEL DOCUMENTO)
-// ==============================================================================
-
-#v(15pt)
-
-#rect(
-  width: 100%,
-  fill: bg-card,
-  stroke: 0.5pt + border-subtle,
-  radius: 6pt,
-  inset: (x: 18pt, y: 18pt)
-)[
-  #text(weight: "bold", size: 12pt, fill: primary)[Índice General de Contenidos]
-  #v(6pt)
-  #line(length: 100%, stroke: 0.6pt + accent)
-  #v(12pt)
-  
-  #outline(
-    title: none,
-    depth: 2,
-    indent: 1.5em
-  )
-]
