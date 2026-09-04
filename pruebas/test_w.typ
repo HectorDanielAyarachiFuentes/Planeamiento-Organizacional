@@ -429,6 +429,8 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
       ]
     )
   ]
+  #v(1pt)
+
   #v(2pt)
   #align(center)[
     #block(
@@ -439,17 +441,17 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
       radius: 4pt,
       inset: (x: 8pt, top: 6pt, bottom: 6pt),
       [
-        #image("img/RioNegro.svg", width: 90%)
+        #image("/tareas/actividad_01/entregables/avance 2/img/RioNegro.svg", width: 92%)
         #v(3pt)
         #text(size: 7.8pt, fill: text-muted, style: "italic")[
-          *Figura 1:* Mapa de la Provincia de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.
+          *Figura 1:* Mapa institucional de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.
         ]
       ]
     )
   ]
   #v(2pt)
-2. *Proyectos de Extensión Territorializados:* Un ejemplo paradigmático de la agenda extensionista del CURZAS es el proyecto *"Nodos en red: experiencias sustentables de producción para pequeños productores"* (liderado por docentes-investigadores del CURZAS como Mgtr. Nancy Osses y Esp. Silvia Martínez). Este dispositivo interviene directamente en territorio junto a pequeños productores de *Valcheta, San Antonio Oeste y General Conesa*, promoviendo la exploración de saberes previos, el acompañamiento técnico, la diversificación productiva y el agregado de valor en origen.
 
+2. *Proyectos de Extensión Territorializados:* Un ejemplo paradigmático de la agenda extensionista del CURZAS es el proyecto *"Nodos en red: experiencias sustentables de producción para pequeños productores"* (liderado por docentes-investigadores del CURZAS como Mgtr. Nancy Osses y Esp. Silvia Martínez). Este dispositivo interviene directamente en territorio junto a pequeños productores de *Valcheta, San Antonio Oeste y General Conesa*, promoviendo la exploración de saberes previos, el acompañamiento técnico, la diversificación productiva y el agregado de valor en origen.
 #pagebreak()
 3. *Mesas Técnicas Interinstitucionales y Emergencias Regionales:* Ante problemáticas socio-ambientales críticas (como la crisis hídrica o la vulnerabilidad de la ganadería ovina y caprina), las secretarías conforman mesas ad hoc temporales junto al Departamento Provincial de Aguas (DPA), el INTA y cooperativas rurales para implementar sistemas de captación de agua de lluvia y mejoras en el manejo forrajero.
 4. *Aporte de la Gobernanza Reticular (Aguilar Villanueva):* En estas experiencias, el CURZAS no impone soluciones tecnocráticas verticales (*top-down*), sino que se inserta como un nodo articulador en una red horizontal (*bottom-up*), donde el conocimiento científico-académico se negocia y coproduce con los saberes empíricos de las comunidades locales y la capacidad operativa de los gobiernos municipales.
