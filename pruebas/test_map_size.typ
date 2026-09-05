@@ -15,9 +15,6 @@
 #let text-muted = rgb("#6b7280")    // Gris suave para metadatos y subtítulos
 #let bg-card = rgb("#f8fafc")       // Fondo neutro suave
 #let border-subtle = rgb("#e2e8f0") // Bordes sutiles
-#let border-line = rgb("#cbd5e1")   // Gris claro para líneas divisorias institucionales (0.5pt)
-#let bg-pregunta = rgb("#f0f4f9")   // Azul pastel muy suave para preguntas de investigación
-#let bg-dictamen = rgb("#fdfcf7")   // Fondo cálido sutil para dictámenes y conclusiones de eje
 
 // Componente: Fila de Metadatos con Separador Horizontal
 #let meta-row(label, value) = [
@@ -39,29 +36,29 @@
   #block(
     width: 100%,
     fill: primary,
-    inset: (x: 16pt, y: 11pt),
+    inset: (x: 16pt, y: 10pt),
     radius: 4pt,
     [
       #grid(
         columns: (1fr, auto),
         align: (left + horizon, right + horizon),
         [
-          #text(fill: white, weight: "bold", size: 12pt, tracking: 0.03em)[#titulo] \
+          #text(fill: white, weight: "bold", size: 11.5pt, tracking: 0.03em)[#titulo] \
           #if subtitulo != "" [
-            #v(3pt)
-            #text(fill: rgb("#e2e8f0"), size: 8.8pt, style: "italic")[#subtitulo]
+            #v(2pt)
+            #text(fill: rgb("#e2e8f0"), size: 8.5pt, style: "italic")[#subtitulo]
           ]
         ],
         text(fill: accent, size: 9pt, weight: "bold")[UNCo — CURZAS]
       )
     ]
   )
-  #v(10pt)
+  #v(8pt)
 ]
 
-// Componente: Caja Destacada General (Callout - Indivisible)
+// Componente: Caja Destacada (Callout - Indivisible)
 #let callout(title, body) = [
-  #v(6pt)
+  #v(4pt)
   #block(
     width: 100%,
     breakable: false,
@@ -75,74 +72,36 @@
       #text(size: 8.9pt, fill: text-main)[#body]
     ]
   )
-  #v(6pt)
-]
-
-// Componente: Caja para Preguntas de Investigación Institucional
-#let callout-pregunta(body) = [
-  #v(7pt)
-  #block(
-    width: 100%,
-    breakable: false,
-    fill: bg-pregunta,
-    stroke: (left: 3.5pt + primary, rest: 0.5pt + border-line),
-    inset: (x: 12pt, y: 8.5pt),
-    radius: (right: 4pt),
-    [
-      #text(weight: "bold", fill: primary, size: 8.2pt, tracking: 0.08em)[PREGUNTA DE INVESTIGACIÓN INSTITUCIONAL] \
-      #v(3pt)
-      #text(size: 8.9pt, fill: text-main, style: "italic")[#body]
-    ]
-  )
-  #v(7pt)
-]
-
-// Componente: Caja para Dictámenes y Conclusiones de Eje
-#let callout-dictamen(title, body) = [
-  #v(7pt)
-  #block(
-    width: 100%,
-    breakable: false,
-    fill: bg-dictamen,
-    stroke: (left: 3.5pt + accent, rest: 0.5pt + border-subtle),
-    inset: (x: 12pt, y: 8.5pt),
-    radius: (right: 4pt),
-    [
-      #text(weight: "bold", fill: rgb("#9a6e1a"), size: 8.2pt, tracking: 0.08em)[#upper(title)] \
-      #v(3pt)
-      #text(size: 8.9pt, fill: text-main)[#body]
-    ]
-  )
-  #v(7pt)
-]
-
-// Estilos de Títulos y Jerarquía Visual (Regla del Doble Espacio Anterior: espacio superior >> inferior)
-#show heading.where(level: 1): it => none // Oculto en el cuerpo porque se despliega en el banner estilizado
-
-#show heading.where(level: 2): it => [
-  #v(16pt)
-  #box(rect(width: 3.5pt, height: 10.5pt, fill: accent, radius: 1pt))
-  #h(5pt)
-  #text(weight: "bold", size: 10.5pt, fill: primary)[#it.body]
-  #v(5pt)
-]
-
-#show heading.where(level: 3): it => [
-  #v(12pt)
-  #text(weight: "bold", size: 9.3pt, fill: primary)[#it.body]
   #v(4pt)
 ]
 
-#show heading.where(level: 4): it => [
-  #v(9pt)
-  #text(weight: "bold", size: 8.8pt, fill: rgb("#174075"))[#it.body]
+// Estilos de Títulos y Jerarquía Visual
+#show heading.where(level: 1): it => none // Oculto en el cuerpo porque se despliega en el banner estilizado
+
+#show heading.where(level: 2): it => [
+  #v(11pt)
+  #box(rect(width: 3.5pt, height: 10.5pt, fill: accent, radius: 1pt))
+  #h(5pt)
+  #text(weight: "bold", size: 10.5pt, fill: primary)[#it.body]
+  #v(4pt)
+]
+
+#show heading.where(level: 3): it => [
+  #v(7pt)
+  #text(weight: "bold", size: 9.3pt, fill: primary)[#it.body]
   #v(3pt)
 ]
 
-#show heading.where(level: 5): it => [
-  #v(7pt)
-  #text(weight: "bold", size: 8.4pt, fill: rgb("#0f2d59"))[#it.body]
+#show heading.where(level: 4): it => [
+  #v(5pt)
+  #text(weight: "bold", size: 8.8pt, fill: rgb("#174075"))[#it.body]
   #v(2.5pt)
+]
+
+#show heading.where(level: 5): it => [
+  #v(4pt)
+  #text(weight: "bold", size: 8.4pt, fill: rgb("#0f2d59"))[#it.body]
+  #v(2pt)
 ]
 
 // ==============================================================================
@@ -219,8 +178,8 @@
       text(size: 8pt, fill: text-muted)[Planeamiento y Control de las Organizaciones | CURZAS],
       text(size: 8pt, fill: primary, weight: "bold")[UNCo — CURZAS]
     )
-    #v(3pt)
-    #line(length: 100%, stroke: 0.5pt + border-line)
+    #v(2pt)
+    #line(length: 100%, stroke: 0.4pt + border-subtle)
   ],
   footer: [
     #line(length: 100%, stroke: 0.3pt + border-subtle)
@@ -310,7 +269,7 @@ La influencia de la NGP en el organismo no es doctrinaria sino *instrumental*, i
 - *Orientación al Usuario/Estudiante en Servicios Académicos:* Incorporación de plataformas de autogestión y ventanilla virtual mediante el ecosistema SIU (Guaraní para gestión académica, Mocoví para gestión presupuestaria de extensión, Wichi/Diaguita) y el sistema de gestión documental electrónica SUDOCU, simplificando trámites, firmas digitales y tiempos de resolución.
 - *Evaluación de Calidad y Rendición por Estándares:* Procesos de autoevaluación institucional y acreditación periódica ante la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU), incorporando parámetros de mejora continua y transparencia formativa.
 
-#callout-dictamen("Dictamen de la Matriz Organizacional")[
+#callout("Dictamen de la Matriz Organizacional")[
   *Conclusión:* El CURZAS se define como una *Burocracia Tradicional Weberiana de Base Profesional*, vertebrada por el autogobierno democrático y complementada con herramientas instrumentales de modernización digital.
 ]
 
@@ -318,19 +277,16 @@ La influencia de la NGP en el organismo no es doctrinaria sino *instrumental*, i
 
 A partir de la conceptualización de Guillermo O'Donnell sistematizada por *Abal Medina (2014)*, la rendición de cuentas institucional en el CURZAS se despliega en tres dimensiones interconectadas:
 
-#v(3pt)
+#v(2pt)
 
 #table(
   columns: (1.1fr, 2.3fr, 1.6fr),
   fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
-  stroke: 0.45pt + border-subtle,
-  align: (col, row) => if row == 0 { left + horizon } else { left + top },
-  inset: (x: 8.5pt, y: 6pt),
-  table.header(
-    text(fill: white, weight: "bold", size: 8.3pt)[Dimensión],
-    text(fill: white, weight: "bold", size: 8.3pt)[Mecanismos Institucionales en CURZAS / UNCo],
-    text(fill: white, weight: "bold", size: 8.3pt)[Sustento Normativo / Evidencia]
-  ),
+  stroke: 0.5pt + border-subtle,
+  inset: (x: 7pt, y: 5.5pt),
+  [#text(fill: white, weight: "bold", size: 8.2pt)[Dimensión]],
+  [#text(fill: white, weight: "bold", size: 8.2pt)[Mecanismos Institucionales en CURZAS / UNCo]],
+  [#text(fill: white, weight: "bold", size: 8.2pt)[Sustento Normativo / Evidencia]],
   
   [
     *Horizontal* \
@@ -403,8 +359,8 @@ El CURZAS ha consolidado una fase madura de *Gobierno Electrónico e Interoperab
 
 === B. Análisis de la Pregunta Guía: Algoritmos e Inteligencia Artificial en Recursos Humanos
 
-#callout-pregunta[
-  ¿Cuenta el organismo con normativas vigentes sobre la incorporación de algoritmos o software predictivo en la selección o monitoreo de personal?
+#callout("Pregunta de Investigación Institucional")[
+  _¿Cuenta el organismo con normativas vigentes sobre la incorporación de algoritmos o software predictivo en la selección o monitoreo de personal?_
 ]
 
 *Resultados del Relevamiento Normativo y de Gestión:*
@@ -428,25 +384,6 @@ El análisis del CURZAS evidencia una organización pública donde converge una 
   "Estado Plataforma, Interoperabilidad y Tramados Institucionales Ad Hoc"
 )
 
-// Separador Conceptual de Sección: Presentación de Ejes Analíticos
-#block(
-  width: 100%,
-  stroke: (left: 3.5pt + primary, rest: 0.5pt + border-subtle),
-  fill: bg-card,
-  radius: (right: 4pt),
-  inset: (x: 14pt, y: 9.5pt),
-  [
-    #text(weight: "bold", size: 8.8pt, fill: primary)[Ejes Analíticos y Metodológicos del Avance 2]
-    #v(3pt)
-    #text(size: 8.3pt, fill: text-muted)[
-      • *Eje 1:* Desafío del "Estado Plataforma" e Interoperabilidad frente a los Silos de Información (Cao & Blutman, Oszlak). \
-      • *Eje 2:* "Tramados Institucionales Ad Hoc" y Despliegue Territorial frente a la Rigidez Departamental (Hintze, Aguilar Villanueva). \
-      • *Eje 3:* Evaluación de Viabilidad, Matriz FODA Situada, Mapeo de Stakeholders y Capacidades Estatales (PES de Carlos Matus, Bertranou).
-    ]
-  ]
-)
-#v(6pt)
-
 == 1. Introducción y Enfoque Teórico del Avance 2
 
 Avanzando en la aplicación de los marcos contemporáneos sobre modernización y reforma estatal, el presente módulo profundiza la conexión del *CURZAS (UNCo)* con el paradigma de la *Poligobernanza* desarrollado por *Horacio Cao y Gustavo Blutman (2019, 2021)*, complementado con las contribuciones de *Luis F. Aguilar Villanueva (2006)*, *Oscar Oszlak (2020)* y *Jorge Hintze (2018)*. 
@@ -455,8 +392,8 @@ El análisis se estructura en torno a dos desafíos organizacionales críticos p
 
 == 2. Desafío 1: El "Estado Plataforma" e Interoperabilidad frente a los Silos de Información
 
-#callout-pregunta[
-  Si pensamos en el "Estado Plataforma" de Cao y Blutman: ¿El CURZAS funciona de manera interoperable compartiendo datos integrados con otros organismos públicos e institutos científicos (como el CONICET o el INTA), o persisten los sistemas aislados de información?
+#callout("Pregunta de Investigación Institucional")[
+  _Si pensamos en el "Estado Plataforma" de Cao y Blutman: ¿El CURZAS funciona de manera interoperable compartiendo datos integrados con otros organismos públicos e institutos científicos (como el CONICET o el INTA), o persisten los sistemas aislados de información?_
 ]
 
 === A. Marco Conceptual: Del Estado Burocrático al Estado Plataforma
@@ -473,14 +410,14 @@ Al contrastar este modelo con la realidad organizativa del CURZAS y su articulac
 2. *Persistencia del Trabajo Manual Duplicado:* Aunque el CONICET desarrolló en 2009 un *"módulo de interoperabilidad"* en SIGEVA para convenios específicos con determinadas universidades (como la UBA), *no existe una pasarela API automatizada e institucionalizada en tiempo real* entre las bases de datos de la UNCo y las de CONICET o INTA. Como consecuencia, los docentes-investigadores del CURZAS con doble pertenencia (en el Centro de Investigaciones y Transferencia *CIT Río Negro / CCT Patagonia Norte* o en proyectos radicados en la *Estación Experimental Agropecuaria INTA Valle Inferior*) deben ingresar manualmente sus datos curriculares, memorias de investigación y producciones científicas por duplicado o triplicado en cada sistema por separado.
 3. *Duplicación de Relevamientos en la Región Sur y Zona Atlántica:* En el plano socio-territorial, las iniciativas de relevamiento de datos socio-productivos, censos campesinos y mapas de vulnerabilidad agroclimática en la Línea Sur continúan ejecutándose de forma fragmentada por cada organismo. La falta de un repositorio digital interoperable único reproduce las *"islas burocráticas"*, insume costos transaccionales innecesarios y priva a la región de una analítica de datos integrada para la toma de decisiones públicas basadas en evidencia.
 
-#callout-dictamen("Dictamen sobre el Eje 1: Interoperabilidad")[
+#callout("Dictamen sobre el Eje 1")[
   *Conclusión:* En el CURZAS *persiste un modelo de sistemas aislados de información*. Si bien se ha consolidado una fase madura de digitalización interna de trámites (SIU/SUDOCU), la transición hacia un *Estado Plataforma interoperable* con CONICET e INTA permanece como una deuda estructural pendiente.
 ]
 
 == 3. Desafío 2: "Tramados Institucionales Ad Hoc" frente a la Rigidez Departamental
 
-#callout-pregunta[
-  Pensando en los "Tramados institucionales ad hoc": ¿Las secretarías de Extensión o Investigación configuran redes flexibles y temporales con municipios locales para resolver demandas socio-productivas de urgencia regional, rompiendo la rigidez de los departamentos tradicionales?
+#callout("Pregunta de Investigación Institucional")[
+  _Pensando en los "Tramados institucionales ad hoc": ¿Las secretarías de Extensión o Investigación configuran redes flexibles y temporales con municipios locales para resolver demandas socio-productivas de urgencia regional, rompiendo la rigidez de los departamentos tradicionales?_
 ]
 
 === A. Marco Conceptual: Tramados Ad Hoc y Gestión Matricial por Proyectos
@@ -504,19 +441,19 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
       fill: bg-card,
       stroke: 0.6pt + border-subtle,
       radius: 4pt,
-      inset: (x: 10pt, top: 8pt, bottom: 8pt),
+      inset: (x: 10pt, top: 7pt, bottom: 7pt),
       [
         #text(weight: "bold", fill: primary, size: 8.8pt)[Estructura Territorial y Oferta Académica del CURZAS en Río Negro]
         #v(4pt)
         #table(
           columns: (115pt, 1fr),
-          stroke: 0.35pt + border-subtle,
+          stroke: 0.3pt + border-subtle,
           fill: (x, y) => if y == 0 { primary } else if calc.even(y) { rgb("#f8fafc") } else { white },
-          align: (col, row) => if row == 0 { left + horizon } else { left + top },
-          inset: (x: 8pt, y: 4.5pt),
+          align: (left + horizon, left + horizon),
+          inset: (x: 7pt, y: 3.5pt),
           table.header(
-            text(weight: "bold", fill: white, size: 8.2pt)[Eje Territorial y Académico],
-            text(weight: "bold", fill: white, size: 8.2pt)[Detalle Institucional]
+            text(weight: "bold", fill: white, size: 8pt)[Eje Territorial y Académico],
+            text(weight: "bold", fill: white, size: 8pt)[Detalle Institucional]
           ),
           [#text(weight: "bold", fill: primary, size: 8pt)[10 Nodos Regionales]],
           [#text(size: 8pt)[
@@ -533,7 +470,7 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
         #v(6pt)
         #image("img/RioNegro.svg", width: 94%)
         #v(3pt)
-        #text(size: 7.8pt, fill: text-muted, style: "italic")[
+        #text(size: 7.6pt, fill: text-muted, style: "italic")[
           *Figura 1:* Mapa de la Provincia de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.
         ]
       ]
@@ -545,7 +482,7 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
 3. *Mesas Técnicas Interinstitucionales y Emergencias Regionales:* Ante problemáticas socio-ambientales críticas (como la crisis hídrica o la vulnerabilidad de la ganadería ovina y caprina), las secretarías conforman mesas ad hoc temporales junto al Departamento Provincial de Aguas (DPA), el INTA y cooperativas rurales para implementar sistemas de captación de agua de lluvia y mejoras en el manejo forrajero.
 4. *Aporte de la Gobernanza Reticular (Aguilar Villanueva):* En estas experiencias, el CURZAS no impone soluciones tecnocráticas verticales (*top-down*), sino que se inserta como un nodo articulador en una red horizontal (*bottom-up*), donde el conocimiento científico-académico se negocia y coproduce con los saberes empíricos de las comunidades locales y la capacidad operativa de los gobiernos municipales.
 
-#callout-dictamen("Dictamen sobre el Eje 2: Tramados Ad Hoc")[
+#callout("Dictamen sobre el Eje 2")[
   *Conclusión:* Las Secretarías de Extensión y de Ciencia y Técnica del CURZAS *sí configuran tramados institucionales ad hoc y redes flexibles temporales*, funcionando como auténticas adhocracias matriciales que sortean la rigidez departamental y responden con celeridad a las urgencias socio-productivas de la Patagonia Norte.
 ]
 
@@ -564,10 +501,9 @@ A partir del cotejo entre las memorias de gestión institucional y las variables
 
 #table(
   columns: (1fr, 1fr),
-  stroke: 0.45pt + border-subtle,
-  fill: (col, row) => if row == 0 or row == 2 { primary } else { bg-card },
-  align: (col, row) => if row == 0 or row == 2 { left + horizon } else { left + top },
-  inset: (x: 9pt, y: 7pt),
+  stroke: 0.5pt + border-subtle,
+  fill: (x, y) => if y == 0 { primary } else if y == 2 { rgb("#174075") } else { bg-card },
+  inset: (x: 8pt, y: 6pt),
   table.header(
     text(weight: "bold", fill: white, size: 8.5pt)[FORTALEZAS (Factores Internos Positivos)],
     text(weight: "bold", fill: white, size: 8.5pt)[DEBILIDADES (Factores Internos Operativos)]
@@ -622,11 +558,10 @@ Las decisiones atinentes al empleo público, dotación y condiciones de trabajo 
 #v(2pt)
 
 #table(
-  columns: (1fr, 0.68fr, 0.65fr, 1.8fr, 1.35fr),
+  columns: (1fr, 0.65fr, 0.65fr, 1.8fr, 1.3fr),
   stroke: 0.4pt + border-subtle,
   fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
-  align: (col, row) => if row == 0 { center + horizon } else { left + top },
-  inset: (x: 6.5pt, y: 5.5pt),
+  inset: (x: 5.5pt, y: 4.2pt),
   table.header(
     text(weight: "bold", fill: white, size: 7.6pt)[Actor Clave (Stakeholder)],
     text(weight: "bold", fill: white, size: 7.6pt)[Ámbito],
@@ -806,13 +741,12 @@ El relevamiento documental y funcional confirma que los planes vigentes son form
   columns: (1.1fr, 0.75fr, 1.55fr, 1.8fr),
   stroke: 0.4pt + border-subtle,
   fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
-  align: (col, row) => if row == 0 { center + horizon } else { left + top },
-  inset: (x: 8pt, y: 6pt),
+  inset: (x: 6.5pt, y: 5.5pt),
   table.header(
-    text(weight: "bold", fill: white, size: 7.9pt)[Momento de la PES (Carlos Matus)],
-    text(weight: "bold", fill: white, size: 7.9pt)[Interrogante Rector],
-    text(weight: "bold", fill: white, size: 7.9pt)[Fundamento Conceptual y Operativo],
-    text(weight: "bold", fill: white, size: 7.9pt)[Aplicación Situada en el CURZAS (UNCo)]
+    text(weight: "bold", fill: white, size: 7.8pt)[Momento de la PES (Carlos Matus)],
+    text(weight: "bold", fill: white, size: 7.8pt)[Interrogante Rector],
+    text(weight: "bold", fill: white, size: 7.8pt)[Fundamento Conceptual y Operativo],
+    text(weight: "bold", fill: white, size: 7.8pt)[Aplicación Situada en el CURZAS (UNCo)]
   ),
   [
     *1. Momento Explicativo* \
@@ -878,7 +812,7 @@ El relevamiento documental y funcional confirma que los planes vigentes son form
 
 #v(4pt)
 
-#callout-dictamen("Articulación Teórico-Práctica de la PES")[
+#callout("Articulación Teórico-Práctica de la PES")[
   *Conclusión del Análisis Situacional:* Como postula Matus, la planificación no es un ejercicio de cálculo aritmético sobre variables dadas, sino una *teoría del juego social*. La viabilidad del CURZAS no emana de la imposición vertical de reglamentos, sino de la capacidad directiva para articular la *viabilidad técnica* (calidad académica y solvencia digital) con la *viabilidad política* (procesamiento del conflicto claustral y negociación paritaria permanente).
 ]
 
@@ -897,7 +831,7 @@ El relevamiento empírico de las competencias laborales del personal docente y n
 3. *Rigidez Escalafonaria:* El escalafón administrativo tradicional dificulta la incorporación ágil de nuevos perfiles tecnológicos de vanguardia (programadores, ingenieros de datos).
 4. *Necesidad de un Plan Situado de Capacitación Continua:* Se requiere diseñar en comisiones paritarias un plan específico que capacite en gobernanza digital, conectividad remota y gestión pública por resultados.
 
-#callout-dictamen("Dictamen Integral de Viabilidad y Capacidades")[
+#callout("Dictamen Integral de Viabilidad y Capacidades")[
   *Conclusión:* El CURZAS ostenta una *robusta capacidad político-relacional* y una *eficiente capacidad administrativa procedimental*, pero su *capacidad técnica y analítica* enfrenta deficiencias operativas ante la digitalización compleja y la dispersión geográfica. La adopción de la *Planificación Estratégica Situacional (PES de Matus)* resulta imperativa para tratar a los trabajadores como actores estratégicos de coproducción y garantizar la viabilidad del proyecto universitario frente a las restricciones del contexto nacional.
 ]
 
@@ -918,9 +852,8 @@ El análisis integral abordado a lo largo del Avance 2 articula los hallazgos en
   - *Mapeo de Actores de Recursos Humanos:* La arena laboral se estructura sobre un equilibrio de fuerzas entre gremios (APUNC y ADUNC), órganos colegiados (Consejo Directivo y Superior), el Decanato y las regulaciones fiscales del Estado nacional (SPU), requiriendo acuerdos en paritarias locales permanentes para viabilizar cualquier reforma.
   - *Evaluación de Capacidades Estatales (Bertranou):* Mientras que la *capacidad político-relacional* se destaca como alta y la *capacidad administrativa* como media-alta en rutinas regladas, la *capacidad técnica y analítica* exhibe deficiencias críticas en analítica de datos, gestión telemática remota y pedagogía virtual híbrida, profundizadas por la rigidez del régimen escalafonario para captar perfiles de vanguardia.
 
-#callout-dictamen("Dictamen Estratégico Final de Planeamiento")[
-  El reto primordial de planeamiento para el CURZAS reside en *articular su potencia de poligobernanza territorial con la modernización de sus capacidades técnicas y de interoperabilidad digital*. Solo transitando hacia una planificación estratégica situacional que empodere y capacite a su personal, y estructurándose como nodo en un Estado Plataforma, la universidad afianzará su misión democratizadora y productiva en la Patagonia Norte.
-]
+*Dictamen Estratégico Final:*
+El reto primordial de planeamiento para el CURZAS reside en *articular su potencia de poligobernanza territorial con la modernización de sus capacidades técnicas y de interoperabilidad digital*. Solo transitando hacia una planificación estratégica situacional que empodere y capacite a su personal, y estructurándose como nodo en un Estado Plataforma, la universidad afianzará su misión democratizadora y productiva en la Patagonia Norte.
 
 #pagebreak()
 
