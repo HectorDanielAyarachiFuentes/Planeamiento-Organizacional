@@ -17,6 +17,14 @@ if os.path.exists(site_packages) and site_packages not in sys.path:
     sys.path.insert(0, site_packages)
 
 REQUIRED_COOKIES = ["SID", "HSID", "SSID", "APISID", "SAPISID"]
+ESSENTIAL_COOKIES = [
+    "SID", "HSID", "SSID", "APISID", "SAPISID",
+    "__Secure-1PSID", "__Secure-3PSID",
+    "__Secure-1PAPISID", "__Secure-3PAPISID",
+    "OSID", "__Secure-OSID",
+    "__Secure-1PSIDTS", "__Secure-3PSIDTS",
+    "SIDCC", "__Secure-1PSIDCC", "__Secure-3PSIDCC",
+]
 
 
 def get_cache_path() -> Path:
@@ -65,8 +73,9 @@ def is_valid_google_cookies(cookies: dict[str, str]) -> bool:
 def save_tokens(cookies: dict[str, str], csrf_token: str = "", session_id: str = "") -> Path:
     """Guarda las cookies en el formato JSON esperado por NotebookLM MCP."""
     cache_file = get_cache_path()
+    filtered_cookies = {k: v for k, v in cookies.items() if k in ESSENTIAL_COOKIES}
     payload = {
-        "cookies": cookies,
+        "cookies": filtered_cookies if filtered_cookies else cookies,
         "csrf_token": csrf_token,
         "session_id": session_id,
         "extracted_at": time.time(),
@@ -116,6 +125,8 @@ def main():
             raw_cookies = clip_content
             source_found = "el portapapeles de Windows"
 
+    is_auto = "--auto" in sys.argv or "--clipboard" in sys.argv
+
     # Si se detectó automáticamente
     if raw_cookies:
         parsed = parse_cookie_string(raw_cookies)
@@ -124,14 +135,20 @@ def main():
         present_keys = [k for k in REQUIRED_COOKIES if k in parsed]
         print(f"   - Claves esenciales encontradas: {', '.join(present_keys)}")
         print()
-        choice = input("¿Deseas guardar y probar estas credenciales? [S/n]: ").strip().lower()
-        if choice in ("", "s", "si", "y", "yes"):
+        if is_auto:
             cookies_to_save = parsed
         else:
-            raw_cookies = ""
+            choice = input("¿Deseas guardar y probar estas credenciales? [S/n]: ").strip().lower()
+            if choice in ("", "s", "si", "y", "yes"):
+                cookies_to_save = parsed
+            else:
+                raw_cookies = ""
+    elif is_auto:
+        print("❌ Error: No se encontraron cookies válidas en el portapapeles ni en cookies.txt.")
+        sys.exit(1)
 
     # 3. Modo Manual (si no se detectó o el usuario prefirió ingresar manualmente)
-    if not raw_cookies:
+    if not raw_cookies and not is_auto:
         print("\n📋 Modo Manual:")
         print("1. En tu navegador abre https://notebooklm.google.com con tu sesión iniciada.")
         print("2. Abre DevTools (F12) -> pestaña Network (Red) -> Recarga (F5).")
