@@ -42,8 +42,17 @@ Thumbs.db
 .idea/
 
 # Auth & Secrets
+.env
+.env.*
 cookies.txt
+*cookies*.txt
+*cookies*.json
+*.cookie
+*.cookies
 auth.json
 *.token
+*token*.json
+credentials*.json
+client_secret*.json
 mcp_settings_backup.json
 
