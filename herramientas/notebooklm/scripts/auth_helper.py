@@ -12,9 +12,14 @@ import time
 from pathlib import Path
 
 # Añadir el entorno uv de notebooklm-mcp si está disponible para reutilizar sus librerías
-site_packages = r"C:\Users\Ramoncito\AppData\Roaming\uv\tools\notebooklm-mcp-server\Lib\site-packages"
-if os.path.exists(site_packages) and site_packages not in sys.path:
-    sys.path.insert(0, site_packages)
+appdata = os.environ.get("APPDATA", "")
+uv_site_packages = Path(appdata) / "uv" / "tools" / "notebooklm-mcp-server" / "Lib" / "site-packages" if appdata else None
+if uv_site_packages and uv_site_packages.exists() and str(uv_site_packages) not in sys.path:
+    sys.path.insert(0, str(uv_site_packages))
+else:
+    fallback_site_packages = r"C:\Users\Ramoncito\AppData\Roaming\uv\tools\notebooklm-mcp-server\Lib\site-packages"
+    if os.path.exists(fallback_site_packages) and fallback_site_packages not in sys.path:
+        sys.path.insert(0, fallback_site_packages)
 
 REQUIRED_COOKIES = ["SID", "HSID", "SSID", "APISID", "SAPISID"]
 ESSENTIAL_COOKIES = [
@@ -105,15 +110,21 @@ def main():
     raw_cookies = ""
     source_found = ""
 
-    # 1. Intentar leer desde cookies.txt en el directorio actual
-    txt_path = Path("cookies.txt")
-    if txt_path.exists():
+    # 1. Intentar leer desde cookies.txt (en el directorio actual o en la carpeta del script)
+    candidate_paths = [
+        Path("cookies.txt"),
+        Path(__file__).parent / "cookies.txt",
+        Path(__file__).resolve().parent.parent / "cookies.txt",
+        Path("herramientas/notebooklm/scripts/cookies.txt"),
+    ]
+    txt_path = next((p for p in candidate_paths if p.exists()), None)
+    if txt_path:
         try:
             content = txt_path.read_text(encoding="utf-8", errors="ignore").strip()
             parsed = parse_cookie_string(content)
             if is_valid_google_cookies(parsed):
                 raw_cookies = content
-                source_found = "archivo 'cookies.txt'"
+                source_found = f"archivo '{txt_path}'"
         except Exception:
             pass
 

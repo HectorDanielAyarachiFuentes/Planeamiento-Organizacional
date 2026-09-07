@@ -34,16 +34,16 @@ Elige el método que te resulte más cómodo:
 #### ⚡ Opción 1: Con la Extensión de 1-Clic (Recomendado)
 1. Abre en Chrome: `chrome://extensions`.
 2. Activa el **Modo de desarrollador** (arriba a la derecha).
-3. Haz clic en **Cargar descomprimida** y selecciona la carpeta `chrome_extension` del proyecto.
+3. Haz clic en **Cargar descomprimida** y selecciona la carpeta `herramientas/notebooklm/chrome_extension`.
 4. En [NotebookLM](https://notebooklm.google.com), haz 1 clic en el icono de la **`N`** (NotebookLM Sync) para copiar tus cookies al portapapeles.
-5. En Antigravity, dile al asistente: *"conéctate"* o ejecuta `python auth_helper.py --auto`.
+5. En Antigravity, dile al asistente: *"conéctate"* o ejecuta `python herramientas/notebooklm/scripts/auth_helper.py --auto`.
 
 #### 📝 Opción 2: Modo Manual desde el Navegador (Sin extensiones)
 1. Abre tu navegador y entra a [NotebookLM](https://notebooklm.google.com) con tu sesión iniciada.
 2. Presiona **F12** y selecciona la pestaña **Network** (Red).
 3. Recarga la página (**F5**) y haz clic en cualquier petición de la lista (por ejemplo, `batchexecute`).
 4. En el panel lateral derecho, ve a **Headers** -> **Request Headers** y copia todo el valor de **`cookie:`** (Clic derecho -> *Copy value*).
-5. Pega ese texto en el chat de Antigravity, o ejecuta `python auth_helper.py` en la terminal.
+5. Pega ese texto en el chat de Antigravity, o ejecuta `python herramientas/notebooklm/scripts/auth_helper.py` en la terminal.
 
 #### 🖥️ Opción 3: Modo CLI Automático (notebooklm-mcp-auth)
 1. Cierra completamente Google Chrome en tu sistema.

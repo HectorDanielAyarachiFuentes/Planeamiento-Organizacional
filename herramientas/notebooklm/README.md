@@ -4,14 +4,30 @@ Integración completa entre **Google NotebookLM** y **Google Antigravity IDE** a
 
 ---
 
-## 📁 Estructura del Repositorio
+## 📁 Estructura del Módulo
 
-- **`.agents/rules/notebooklm.md`**: Reglas de comportamiento del agente para manejar la autenticación, idiomas y organización.
-- **`.agents/skills/using-notebooklm-mcp/SKILL.md`**: Skill estandarizada de Antigravity para interactuar con todas las herramientas de NotebookLM MCP.
-- **`chrome_extension/`**: Mini-extensión de Chrome para extraer y sincronizar las cookies de sesión en 1 solo clic.
-- **`auth_helper.py`**: Script para validar, guardar y renovar tokens (soporta modo automático con `--auto` leyendo el portapapeles).
-- **`notebooklm_mcp_guide.md`**: Guía detallada de instalación y solución de problemas.
-- **`.agents/Tutoriales/`**: Transcripciones y prompts maestros para NotebookLM y creación de dashboards.
+```text
+herramientas/notebooklm/
+├── README.md                     # Este archivo (guía general del módulo)
+├── chrome_extension/             # Extensión de Chrome para extracción en 1 clic
+│   ├── manifest.json
+│   ├── popup.html
+│   ├── popup.js
+│   └── README.md
+├── docs/                         # Documentación y guías técnicas
+│   └── notebooklm_mcp_guide.md   # Guía detallada de instalación y solución de problemas
+├── scripts/                      # Automatizaciones y scripts de conexión
+│   └── auth_helper.py            # Script para validar, guardar y renovar tokens
+└── tutoriales/                   # Material de referencia, capturas y transcripciones
+    ├── Ejemplo-cookie.jpeg
+    ├── Tutorial.txt
+    └── VIdeo.txt
+```
+
+> **Configuración del Agente en el Workspace:**
+> - Regla de comportamiento: `.agents/rules/notebooklm.md`
+> - Skill estandarizada: `.agents/skills/using-notebooklm-mcp/SKILL.md`
+> - Configuración MCP: `.agents/mcp_config.json`
 
 ---
 
@@ -56,4 +72,4 @@ Ideal si prefieres no instalar ninguna extensión y copiar tus credenciales dire
 6. Busca la línea que dice **`cookie:`**, selecciona todo su valor y cópialo.
 7. **Para conectar:**
    - Pega ese texto directamente aquí en el chat de Antigravity, **o**
-   - Pégalo en la terminal ejecutando `python auth_helper.py`.
+   - Pégalo en la terminal ejecutando `python herramientas/notebooklm/scripts/auth_helper.py`.
