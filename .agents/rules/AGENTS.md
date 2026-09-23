@@ -36,14 +36,19 @@ Planeamiento Organizacional/
 │       ├── docs/            # Documentación y guías de configuración
 │       ├── scripts/         # Herramientas de autenticación y soporte (auth_helper.py)
 │       └── tutoriales/      # Material audiovisual y transcripciones
-├── tareas/                  # Carpeta principal de actividades y trabajos prácticos
-│   ├── README.md            # Índice general y estado de actividades
-│   └── actividad_01/        # Estructura modular por actividad (actividad_01, actividad_02, etc.)
-│       ├── README.md        # Resumen del módulo
-│       ├── consigna/        # Consignas oficiales y pautas de cátedra (.docx, .pdf)
-│       ├── material/        # Bibliografía y lecturas de referencia (PDFs de cátedra)
-│       ├── avances/         # Borradores, código (.typ, .py) y versiones en desarrollo
-│       └── entregables/     # ÚNICA FUENTE DE LA VERDAD para versiones finales (.pdf, .typ)
+├── Actividades/             # Carpeta principal de actividades y trabajos prácticos
+│   ├── consigna/            # Consignas oficiales y pautas de cátedra (.docx, .pdf)
+│   │   ├── actividad_01/
+│   │   └── actividad_02/
+│   ├── material/            # Bibliografía y lecturas de referencia (PDFs de cátedra)
+│   │   ├── actividad_01/
+│   │   └── actividad_02/
+│   ├── avances/             # Borradores, código (.typ, .py) y versiones en desarrollo
+│   │   ├── actividad_01/
+│   │   └── actividad_02/
+│   └── entregables/         # ÚNICA FUENTE DE LA VERDAD para versiones finales (.pdf, .typ)
+│       ├── actividad_01/
+│       └── actividad_02/
 └── tests/                   # Pruebas automatizadas de compilación y validación
 ```
 
@@ -52,10 +57,10 @@ Planeamiento Organizacional/
 ## 🔄 3. Flujo de Trabajo para Actividades y Tareas
 
 Para cada nueva actividad o trabajo práctico (`actividad_XX`):
-1. **Consigna:** Documento oficial o pautas provistas por los docentes en `tareas/actividad_XX/consigna/`.
-2. **Material:** Bibliografía de lectura o insumos teóricos en `tareas/actividad_XX/material/`.
-3. **Desarrollo / Avances:** Borradores, scripts de maquetación y archivos `.typ` de trabajo en `tareas/actividad_XX/avances/`.
-4. **Entregables Finales:** El archivo `.pdf` definitivo (y su correspondiente `.typ` consolidado) compilado en `tareas/actividad_XX/entregables/`.
+1. **Consigna:** Documento oficial o pautas provistas por los docentes en `Actividades/consigna/actividad_XX/`.
+2. **Material:** Bibliografía de lectura o insumos teóricos en `Actividades/material/actividad_XX/`.
+3. **Desarrollo / Avances:** Borradores, scripts de maquetación y archivos `.typ` de trabajo en `Actividades/avances/actividad_XX/`.
+4. **Entregables Finales:** El archivo `.pdf` definitivo (y su correspondiente `.typ` consolidado) compilado en `Actividades/entregables/actividad_XX/`.
 
 ---
 

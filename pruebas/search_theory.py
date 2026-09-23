@@ -2,7 +2,7 @@ import pymupdf
 import os
 import re
 
-material_dir = r"tareas\actividad_01\material"
+material_dir = r"Actividades\actividad_01\material"
 
 def search_pdf(filename, terms):
     filepath = os.path.join(material_dir, filename)

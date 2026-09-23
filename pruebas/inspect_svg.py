@@ -1,7 +1,7 @@
 import re
 import xml.etree.ElementTree as ET
 
-tree = ET.parse(r"tareas/actividad_01/entregables/avance 2/img/RioNegro.svg")
+tree = ET.parse(r"Actividades/entregables/actividad_02/img/RioNegro.svg")
 root = tree.getroot()
 
 # Find texts

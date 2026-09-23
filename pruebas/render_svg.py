@@ -1,6 +1,6 @@
 import fitz
 
-svg_path = 'tareas/actividad_01/entregables/avance 2/img/RioNegro.svg'
+svg_path = 'Actividades/entregables/actividad_02/img/RioNegro.svg'
 doc = fitz.open(svg_path)
 page = doc[0]
 pix = page.get_pixmap(dpi=150)

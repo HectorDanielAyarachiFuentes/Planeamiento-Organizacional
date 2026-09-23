@@ -4,7 +4,7 @@ import copy
 import pymupdf
 
 # Load original SVG
-svg_path = 'tareas/actividad_01/entregables/avance 2/img/RioNegro.svg'
+svg_path = 'Actividades/entregables/actividad_02/img/RioNegro.svg'
 tree = ET.parse(svg_path)
 root = tree.getroot()
 

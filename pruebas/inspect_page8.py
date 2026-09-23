@@ -1,6 +1,6 @@
 import pymupdf
 
-doc = pymupdf.open(r"tareas/actividad_01/entregables/avance 2/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.pdf")
+doc = pymupdf.open(r"Actividades/entregables/actividad_02/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.pdf")
 print("Total pages:", len(doc))
 
 for i in range(len(doc)):

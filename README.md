@@ -33,14 +33,11 @@ Planeamiento Organizacional/
 │       ├── docs/            # Documentación y guías técnicas de integración
 │       ├── scripts/         # Herramientas de autenticación y soporte (auth_helper.py)
 │       └── tutoriales/      # Video tutoriales y transcripciones operativas
-├── tareas/                  # Gestión modular de actividades y trabajos prácticos
-│   ├── README.md            # Índice general y estado de entregas
-│   └── actividad_01/        # Estructura modular por actividad
-│       ├── README.md        # Resumen y objetivos del módulo
-│       ├── consigna/        # Consignas oficiales y pautas de la cátedra (.docx, .pdf)
-│       ├── material/        # Bibliografía, lecturas teóricas y artículos de referencia
-│       ├── avances/         # Código fuente (.typ), borradores y scripts de maquetación
-│       └── entregables/     # Versión definitiva lista para entrega (.pdf, .typ)
+├── Actividades/             # Gestión modular de actividades y trabajos prácticos
+│   ├── consigna/            # Consignas oficiales y pautas de cátedra (.docx, .pdf)
+│   ├── material/            # Bibliografía, lecturas teóricas y artículos de referencia
+│   ├── avances/             # Código fuente (.typ), borradores y scripts de maquetación
+│   └── entregables/         # Versión definitiva lista para entrega (.pdf, .typ)
 ├── pruebas/                 # Zona de aislamiento para procesamiento y scripts temporales
 └── tests/                   # Pruebas automatizadas de compilación y validación
 ```
@@ -49,14 +46,14 @@ Planeamiento Organizacional/
 
 ## 🚀 Compilación de Documentos Typst
 
-Para compilar cualquier archivo `.typ` a PDF de manera directa:
+Para compilar los documentos a PDF de manera directa con Python:
 
 ```powershell
-# Compilación directa usando typst CLI
-typst compile "tareas/actividad_01/avances/avance_1_typst.typ" "tareas/actividad_01/entregables/Avance_1.pdf"
+# Compilación de Actividad 1 (Avance 1)
+python -c "import typst; typst.compile('Actividades/entregables/actividad_01/Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ', output='Actividades/entregables/actividad_01/Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.pdf', root='.')"
 
-# O mediante el wrapper de Python
-python -c "import typst; typst.compile('tareas/actividad_01/avances/avance_1_typst.typ', output='tareas/actividad_01/entregables/Avance_1.pdf')"
+# Compilación de Actividad 2 (Avance 2)
+python -c "import typst; typst.compile('Actividades/entregables/actividad_02/modulos/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ', output='Actividades/entregables/actividad_02/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf', root='.')"
 ```
 
 ---

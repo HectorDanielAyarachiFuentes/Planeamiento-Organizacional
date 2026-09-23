@@ -437,9 +437,9 @@ El análisis multidimensional del CURZAS confirma que la institución se encuent
 ]
 """
 
-with open(r"tareas\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "w", encoding="utf-8") as f:
+with open(r"Actividades\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "w", encoding="utf-8") as f:
     f.write(typst_code)
 
-output_pdf = r"tareas\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.pdf"
-typst.compile(r"tareas\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", output=output_pdf, root=workspace_root)
+output_pdf = r"Actividades\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.pdf"
+typst.compile(r"Actividades\actividad_01\entregables\avance 2\Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", output=output_pdf, root=workspace_root)
 print("Compiled successfully! File size:", os.path.getsize(output_pdf))

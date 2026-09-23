@@ -1,7 +1,7 @@
 import typst
 import pymupdf
 
-with open(r"tareas/actividad_01/entregables/avance 2/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "r", encoding="utf-8") as f:
+with open(r"Actividades/entregables/actividad_02/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "r", encoding="utf-8") as f:
     content = f.read()
 
 pos2 = content.find("2. *Proyectos de Extensión")
@@ -19,7 +19,7 @@ for w in [82, 85, 88, 90, 92]:
       radius: 4pt,
       inset: (x: 8pt, top: 6pt, bottom: 6pt),
       [
-        #image("/tareas/actividad_01/entregables/avance 2/img/RioNegro.svg", width: {w}%)
+        #image("/Actividades/entregables/actividad_02/img/RioNegro.svg", width: {w}%)
         #v(3pt)
         #text(size: 7.8pt, fill: text-muted, style: "italic")[
           *Figura 1:* Mapa institucional de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.

@@ -441,7 +441,7 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
       radius: 4pt,
       inset: (x: 8pt, top: 6pt, bottom: 6pt),
       [
-        #image("/tareas/actividad_01/entregables/avance 2/img/RioNegro.svg", width: 80%)
+        #image("/Actividades/entregables/actividad_02/img/RioNegro.svg", width: 80%)
         #v(3pt)
         #text(size: 7.8pt, fill: text-muted, style: "italic")[
           *Figura 1:* Mapa institucional de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.

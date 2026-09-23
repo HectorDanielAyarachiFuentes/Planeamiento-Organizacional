@@ -433,7 +433,7 @@ El análisis multidimensional del CURZAS confirma que la institución se encuent
 ]
 """
 
-with open("tareas/actividad_01/entregables/avance 2/Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "w", encoding="utf-8") as f:
+with open("Actividades/entregables/actividad_02/Avance_1_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Mejorado.typ", "w", encoding="utf-8") as f:
     f.write(test_content)
 
 print("Updated typst file")

@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import re
 
-tree = ET.parse(r"tareas/actividad_01/entregables/avance 2/img/RioNegro.svg")
+tree = ET.parse(r"Actividades/entregables/actividad_02/img/RioNegro.svg")
 root = tree.getroot()
 
 for elem in root.iter('{http://www.w3.org/2000/svg}path'):

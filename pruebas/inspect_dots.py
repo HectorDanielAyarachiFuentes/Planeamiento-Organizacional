@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('tareas/actividad_01/entregables/avance 2/img/RioNegro.svg')
+tree = ET.parse('Actividades/entregables/actividad_02/img/RioNegro.svg')
 root = tree.getroot()
 
 for el in root.iter():

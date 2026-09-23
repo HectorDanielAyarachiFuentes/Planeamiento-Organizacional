@@ -7,7 +7,7 @@ Este documento sirve como **guía de arquitectura y manual técnico para agentes
 ## 📂 Mapa de Estructura de Directorios
 
 ```text
-tareas/actividad_01/entregables/avance 2/
+Actividades/entregables/actividad_02/
 ├── Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf   # Entregable Final Compilado
 └── modulos/
     ├── Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ   # Archivo Principal (Entrypoint Orquestador)
@@ -29,7 +29,7 @@ tareas/actividad_01/entregables/avance 2/
 
 ## 🎨 1. Sistema de Diseño Visual y Tokens (`modulos/config/estilos.typ`)
 
-Todos los colores, fuentes y reglas de visualización se encuentran centralizados en [`estilos.typ`](file:///c:/Users/Ramoncito/.antigravity-ide/Planeamiento%20Organizacional/tareas/actividad_01/entregables/avance%202/modulos/config/estilos.typ).
+Todos los colores, fuentes y reglas de visualización se encuentran centralizados en [`estilos.typ`](file:///c:/Users/Ramoncito/.antigravity-ide/Planeamiento%20Organizacional/Actividades/entregables/actividad_02/modulos/config/estilos.typ).
 
 ### 🎨 Paleta de Colores Oficial (HEX / RGB)
 * **`primary` (`#0f2d59`):** Azul Marino Institucional. Usado en títulos, banners, bordes de callout y encabezados de tabla.
@@ -53,7 +53,7 @@ Todos los colores, fuentes y reglas de visualización se encuentran centralizado
 
 ## 🧩 2. Componentes Reutilizables (`modulos/components/cajas.typ`)
 
-Los componentes de interfaz de usuario en Typst están definidos en [`cajas.typ`](file:///c:/Users/Ramoncito/.antigravity-ide/Planeamiento%20Organizacional/tareas/actividad_01/entregables/avance%202/modulos/components/cajas.typ):
+Los componentes de interfaz de usuario en Typst están definidos en [`cajas.typ`](file:///c:/Users/Ramoncito/.antigravity-ide/Planeamiento%20Organizacional/Actividades/entregables/actividad_02/modulos/components/cajas.typ):
 
 1. **`meta-row(label, value)`:**
    Renderiza una fila de metadatos con etiqueta en negrita primaria y divisor inferior horizontal sutil.
@@ -113,14 +113,14 @@ Cuando la IA o un desarrollador deba **agregar una nueva sección o corregir tex
 
 ## ⚙️ 5. Comando de Compilación y Validación
 
-Para compilar el proyecto y generar la versión PDF final en `entregables/avance 2/`:
+Para compilar el proyecto y generar la versión PDF final en `entregables/actividad_02/`:
 
 ```powershell
 # Opción 1: Compilación con binario de Typst CLI (si está en el PATH)
-typst compile --root "." "tareas\actividad_01\entregables\avance 2\modulos\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ" "tareas\actividad_01\entregables\avance 2\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf"
+typst compile --root "." "Actividades\entregables\actividad_02\modulos\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ" "Actividades\entregables\actividad_02\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf"
 
 # Opción 2: Compilación con paquete de Python 'typst' (Recomendado en este entorno)
-python -c "import typst; typst.compile('tareas/actividad_01/entregables/avance 2/modulos/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ', output='tareas/actividad_01/entregables/avance 2/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf', root='.')"
+python -c "import typst; typst.compile('Actividades/entregables/actividad_02/modulos/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ', output='Actividades/entregables/actividad_02/Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf', root='.')"
 ```
 
 *Nota: Siempre verificar que el PDF se actualice correctamente en `entregables/avance 2/` sin errores de compilación.*

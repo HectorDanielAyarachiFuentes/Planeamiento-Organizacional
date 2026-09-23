@@ -1,7 +1,7 @@
 import typst, os, fitz
 
-svg_path = r'tareas\actividad_01\entregables\avance 2\img\RioNegro.svg'
-typ_path = r'tareas\actividad_01\entregables\avance 2\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ'
+svg_path = r'Actividades\actividad_01\entregables\avance 2\img\RioNegro.svg'
+typ_path = r'Actividades\actividad_01\entregables\avance 2\Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.typ'
 
 with open(svg_path, 'r', encoding='utf-8') as f:
     svg_data = f.read()
@@ -12,7 +12,7 @@ with open(svg_path, 'r', encoding='utf-8') as f:
 # So X from -85 to 1635 (width 1720), Y from 0 to 1130 (height 1130)
 new_svg_data = svg_data.replace('viewBox="-90 0 1853 1260"', 'viewBox="-85 0 1720 1130"')
 
-test_svg_path = r'tareas\actividad_01\entregables\avance 2\img\RioNegro_opt.svg'
+test_svg_path = r'Actividades\actividad_01\entregables\avance 2\img\RioNegro_opt.svg'
 with open(test_svg_path, 'w', encoding='utf-8') as f:
     f.write(new_svg_data)
 
@@ -39,7 +39,7 @@ for opt in ['width: 100%']:
         'inset: (x: 10pt, top: 10pt, bottom: 10pt),'
     )
 
-    temp_typ = r'tareas\actividad_01\entregables\avance 2\temp_render.typ'
+    temp_typ = r'Actividades\actividad_01\entregables\avance 2\temp_render.typ'
     temp_pdf = r'pruebas\test_opt.pdf'
 
     with open(temp_typ, 'w', encoding='utf-8') as f:

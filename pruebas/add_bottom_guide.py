@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import pymupdf
 
-base_svg = 'tareas/actividad_01/entregables/avance 2/img/RioNegro.svg'
+base_svg = 'Actividades/entregables/actividad_02/img/RioNegro.svg'
 tree = ET.parse(base_svg)
 root = tree.getroot()
 

@@ -3,7 +3,7 @@ import pymupdf
 import shutil
 
 # Load and update the SVG
-svg_target = 'tareas/actividad_01/entregables/avance 2/img/RioNegro.svg'
+svg_target = 'Actividades/entregables/actividad_02/img/RioNegro.svg'
 tree = ET.parse(svg_target)
 root = tree.getroot()
 

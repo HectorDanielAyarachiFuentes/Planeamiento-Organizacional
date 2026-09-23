@@ -2,7 +2,7 @@ import re
 import pymupdf
 from PIL import Image
 
-with open(r"tareas/actividad_01/entregables/avance 2/img/RioNegro.svg", "r", encoding="utf-8") as f:
+with open(r"Actividades/entregables/actividad_02/img/RioNegro.svg", "r", encoding="utf-8") as f:
     svg_content = f.read()
 
 # 1. Fix Adolfo Alsina (text2211) and Viedma (text2207)
