@@ -19,10 +19,14 @@ Planeamiento Organizacional/
 ├── .agents/
 │   ├── rules/
 │   │   ├── AGENTS.md        # Reglas operativas y estándares para el agente
+│   │   ├── git_commits.md   # Reglas para mensajes de confirmación de git
+│   │   ├── gitnexus.md      # Reglas operativas para GitNexus (inteligencia de código)
 │   │   ├── notebooklm.md    # Reglas operativas para NotebookLM MCP
 │   │   └── supreme_guidelines.md # Pautas de diseño y estética
-│   ├── skills/              # Skills de workspace (using-notebooklm-mcp)
-│   └── mcp_config.json      # Configuración de servidores MCP
+│   ├── skills/              # Skills de workspace (using-notebooklm-mcp, gitnexus-*)
+│   └── mcp_config.json      # Configuración de servidores MCP (notebooklm, gitnexus)
+├── .gitnexus/               # Grafo de conocimiento e inteligencia de código (run.cjs)
+├── .gitnexusignore          # Exclusiones de indexación para GitNexus
 ├── assets/                  # Recursos gráficos y multimedia
 │   └── img/                 # Logotipos institucionales (CURZAS.png)
 ├── plantillas_pdf/          # Motores de exportación y plantillas reutilizables
@@ -49,7 +53,9 @@ Planeamiento Organizacional/
 │   └── entregables/         # ÚNICA FUENTE DE LA VERDAD para versiones finales (.pdf, .typ)
 │       ├── actividad_01/
 │       └── actividad_02/
-└── tests/                   # Pruebas automatizadas de compilación y validación
+├── tests/                   # Pruebas automatizadas de compilación y validación
+├── compilar_todos.py        # Pipeline automatizado de compilación Docs-as-Code (Typst -> PDF)
+└── compilar_todos.ps1       # Script PowerShell para compilación rápida
 ```
 
 ---
@@ -67,7 +73,7 @@ Para cada nueva actividad o trabajo práctico (`actividad_XX`):
 ## 📄 4. Estándar para Documentos y Reportes (Typst)
 
 1. **Formato Principal:** Todas las entregas académicas, informes y reportes deben redactarse en **Typst (`.typ`)** y compilarse a **PDF (`.pdf`)**.
-2. **Sincronización:** Cada vez que se cree o edite un archivo `.typ`, se debe compilar y actualizar su `.pdf` correspondiente en la carpeta `entregables/` de la actividad respectiva.
+2. **Sincronización Automatizada:** Ejecutar `python compilar_todos.py` (o `.\compilar_todos.ps1`) para compilar y actualizar de forma unificada todos los `.typ` a sus `.pdf` definitivos en `Actividades/entregables/`.
 3. **Estilo Visual e Institucional:**
    * **Tipografía:** *Segoe UI* o *Arial*, tamaño base `9.5pt` a `10pt`, interlineado `0.65em` a `0.7em`.
    * **Paleta de Colores:**
@@ -123,4 +129,75 @@ Para cada nueva actividad o trabajo práctico (`actividad_XX`):
   * `test:` para scripts de validación, pruebas o compilación.
   * `chore:` para tareas de mantenimiento, configuración o limpieza.
 * **Estructura y Tono:** Claros, descriptivos, en minúsculas y sin punto final en la primera línea.
+
+---
+
+## 🧠 8. Ecosistema de Inteligencia Dual: GitNexus + NotebookLM
+
+El repositorio opera bajo un **modelo simbiótico de inteligencia dual**, donde dos herramientas avanzadas se complementan de forma armónica dividiendo sus dominios para garantizar la excelencia académica y la estabilidad técnica del proyecto:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    ARQUITECTURA DE INTELIGENCIA DUAL                        │
+├─────────────────────────────────────────────┬───────────────────────────────┤
+│    💡 NOTEBOOKLM (Cerebro Académico)        │     🕸️ GITNEXUS (Cerebro Técnico)    │
+├─────────────────────────────────────────────┼───────────────────────────────┤
+│ • Rigor conceptual y teórico                │ • Integridad de código y plantillas   │
+│ • Bibliografía de cátedra (Oszlak, Mintzberg)│ • Pipeline Docs-as-Code (Typst/Python)│
+│ • Consignas oficiales y criterios docentes  │ • Grafo de dependencias y módulos .typ│
+│ • Resoluciones CURZAS / UNCo                │ • Análisis de impacto (blast radius)  │
+│ • Generación de resúmenes y audio overviews │ • Detección de cambios y regresiones  │
+│ 🎯 GOBIERNA EL CONTENIDO Y EL FONDO         │ 🎯 GOBIERNA LA FORMA Y LA ESTRUCTURA  │
+└─────────────────────────────────────────────┴───────────────────────────────┘
+                                       │
+                                       ▼
+                  📄 DOCUMENTOS MODULARES TYPST (.typ)
+                                       │
+                                       ▼
+              🏛️ ENTREGABLES INSTITUCIONALES DEFINITIVOS (.pdf)
+```
+
+### 1. Perfil y Responsabilidades de Cada Herramienta
+
+| Dimensión | 💡 NotebookLM (`notebooklm-mcp`) | 🕸️ GitNexus (`gitnexus`) |
+| :--- | :--- | :--- |
+| **Rol Primario** | Asistente de Investigación y Rigor Académico | Asistente de Código y Control de Arquitectura |
+| **Fuentes de Verdad** | PDFs de cátedra (Oszlak, Cao, Mintzberg, Schlemenson), consignas oficiales, resoluciones CURZAS. | Código fuente (`plantillas_pdf/`, scripts Python, módulos `.typ` en `Actividades/entregables/`). |
+| **Operación Típica** | Consultar marco teórico, verificar conceptos de diseño organizacional, sintetizar bibliografía. | Analizar impacto de cambios (`impact`), inspeccionar dependencias (`context`), validar cambios antes de commit (`detect-changes`). |
+| **Salida Producida** | Fundamentación teórica, citas bibliográficas precisas, resúmenes analíticos y guías de estudio. | Grafo AST de dependencias, reportes de riesgo estructural, refactorización segura sin regresiones. |
+
+### 2. Sinergia y Flujo de Trabajo Integrado (Workflow de 5 Fases)
+
+Para el desarrollo o ajuste de cualquier actividad práctica:
+
+1. **Fase 1 — Indagación Teórica y Conceptual (NotebookLM):**
+   - Consultar las fuentes académicas del módulo correspondiente para fundamentar el diagnóstico, diseño de estructuras o planes de acción según los marcos de la cátedra.
+   - Extraer definiciones precisas y contrastar con las consignas docentes.
+2. **Fase 2 — Composición Modular Docs-as-Code (Typst):**
+   - Redactar los desarrollos en los módulos `.typ` correspondientes (`Actividades/avances/actividad_XX/` o `Actividades/entregables/actividad_XX/modulos/`).
+   - Mantener la separación de responsabilidades entre secciones y documento principal.
+3. **Fase 3 — Control de Arquitectura y Análisis de Impacto (GitNexus):**
+   - Antes de modificar plantillas base (`plantillas_pdf/1_typst/`), funciones generadoras en Python o módulos compartidos:
+     ```powershell
+     node .gitnexus/run.cjs impact "<nombreSimbolo>" --direction upstream --repo .
+     ```
+   - Prevenir que modificaciones en estilos o layouts rompan entregables ya validados (`actividad_01`).
+4. **Fase 4 — Compilación Automatizada y Detección de Cambios (GitNexus + Typst):**
+   - Compilar todos los entregables de forma estandarizada:
+     ```powershell
+     python compilar_todos.py
+     ```
+   - Verificar la estabilidad estructural mediante el análisis de grafo de GitNexus:
+     ```powershell
+     node .gitnexus/run.cjs detect-changes --scope all --repo .
+     ```
+5. **Fase 5 — Retroalimentación Docente y Mejora Continua (NotebookLM):**
+   - Incorporar las devoluciones y observaciones de la cátedra a NotebookLM para guiar las correcciones conceptuales y perfeccionar las entregas sucesivas.
+
+### 3. Guardarraíles de Coexistencia Obligatorios:
+* **Prohibición de invención en ambos planos:**
+  - En lo académico: Nunca inventar citas ni marcos teóricos; contrastar siempre con NotebookLM.
+  - En lo técnico: Nunca alterar funciones, scripts o módulos compartidos a ciegas; validar siempre el impacto con GitNexus.
+* **Higiene total:** Todo ensayo o script temporal debe alojarse en `pruebas/` o `tests/`, manteniendo la raíz impecable y el índice de GitNexus actualizado.
+
 

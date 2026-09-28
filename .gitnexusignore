@@ -1,0 +1,36 @@
+# GitNexus Ignore — Planeamiento Organizacional (CURZAS - UNCo)
+
+# Herramientas auxiliares externas y repositorios clonados
+node_modules/
+dist/
+build/
+
+# Skills e instrucciones de agentes (no forman parte del AST de código del proyecto)
+.agents/skills/
+.claude/
+
+# Pruebas y experimentos temporales
+pruebas/
+
+# Archivos de bibliografía estática, material de lectura y binarios/documentos
+Actividades/consigna/
+Actividades/material/
+assets/
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Cache y temporales
+__pycache__/
+*.pyc
+.vscode/
+
+# Credenciales y logs
+cookies.txt
+auth.json
+*.log
