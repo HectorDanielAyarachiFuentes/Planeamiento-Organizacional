@@ -447,6 +447,25 @@ El régimen de funciones del personal se encuentra estrictamente tipificado por 
   ¿El organigrama real coincide con la estructura formal de dependencias y delegaciones institucionales en el CURZAS?
 ]
 
+#v(3pt)
+#align(center)[
+  #block(
+    width: 100%,
+    stroke: 0.5pt + border-subtle,
+    radius: 4pt,
+    fill: white,
+    inset: (x: 4pt, y: 4pt),
+    [
+      #image("/Actividades/material/actividad_03/organigrama.svg", width: 100%)
+      #v(2pt)
+      #text(size: 7.8pt, fill: text-muted, style: "italic")[
+        *Figura 1:* Organigrama Funcional y Estructural del CURZAS — UNCo: Dependencias Formales (De Jure) vs. Red Territorial Emergente de 10 Nodos Regionales (De Facto) y Área Crítica de Personal.
+      ]
+    ]
+  )
+]
+#v(4pt)
+
 Al contrastar el organigrama aprobado estatutariamente con el funcionamiento cotidiano y empírico del CURZAS, se evidencian *disparidades estructurales significativas*:
 
 1. *Invisibilidad Orgánica de la Red de Nodos Territoriales:*
