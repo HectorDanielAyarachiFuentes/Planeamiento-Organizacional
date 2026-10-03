@@ -39,6 +39,13 @@ ENTREGABLES = {
             WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_02" / "Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi_Correccion.pdf",
             WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_02" / "Avance_2_Contexto_Modelo_Gestion_Gobernanza_CURZAS_Hector_Ayarachi.pdf"
         ]
+    },
+    "actividad_03": {
+        "nombre": "Actividad 3 — Avance 3: Estructura Orgánica, Flujograma y Transformación Digital (CURZAS)",
+        "entrada": WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_03" / "Avance_3_Estructura_Organigrama_Flujograma_GDE_CURZAS_Hector_Ayarachi.typ",
+        "salidas": [
+            WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_03" / "Avance_3_Estructura_Organigrama_Flujograma_GDE_CURZAS_Hector_Ayarachi.pdf"
+        ]
     }
 }
 
@@ -145,7 +152,7 @@ def main():
     )
     parser.add_argument(
         "--target", "-t",
-        choices=["actividad_01", "actividad_02", "1", "2", "all"],
+        choices=["actividad_01", "actividad_02", "actividad_03", "1", "2", "3", "all"],
         default="all",
         help="Entregable específico a compilar (por defecto: all)."
     )
@@ -156,6 +163,8 @@ def main():
         filtro = "actividad_01"
     elif args.target in ["2", "actividad_02"]:
         filtro = "actividad_02"
+    elif args.target in ["3", "actividad_03"]:
+        filtro = "actividad_03"
 
     resultado = compilar_todos(filtro=filtro)
     sys.exit(0 if resultado else 1)

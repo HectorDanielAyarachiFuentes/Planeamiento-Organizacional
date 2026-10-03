@@ -63,9 +63,11 @@
 
 #pagebreak()
 
-// 3. Cuerpo del Informe Modularizado (Incluye la versión con correcciones de Avance 2)
+// 3. Cuerpo del Informe Modularizado (Incluye Avances 1, 2 y 3)
 #include "secciones/01_avance1.typ"
 #pagebreak()
 #include "secciones/02_avance2_correccion.typ"
 #pagebreak()
-#include "secciones/03_bibliografia.typ"
+#include "secciones/03_avance3.typ"
+#pagebreak()
+#include "secciones/04_bibliografia.typ"

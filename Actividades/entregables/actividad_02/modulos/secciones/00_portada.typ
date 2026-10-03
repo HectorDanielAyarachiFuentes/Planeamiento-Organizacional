@@ -52,7 +52,7 @@
   #meta-row("Carrera:", "Licenciatura en Recursos Humanos")
   #meta-row("Institución Analizada:", "Complejo Universitario Regional Zona Atlántica y Sur (CURZAS)")
   #meta-row("Sede Académica:", "Viedma, Provincia de Río Negro")
-  #meta-row("Marco Teórico:", "Bertranou, Matus, Cao & Blutman, Aguilar Villanueva, Abal Medina, Oszlak, Hintze")
+  #meta-row("Marco Teórico:", "Bertranou, Matus, Cao & Blutman, Aguilar Villanueva, Abal Medina, Oszlak, Hintze, Forester, INAP, Campos et al., Zeller")
   #meta-row("Ciclo Lectivo:", "2026")
   
   #align(bottom + center)[
