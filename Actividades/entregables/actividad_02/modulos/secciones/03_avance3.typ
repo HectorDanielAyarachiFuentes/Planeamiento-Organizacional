@@ -35,7 +35,7 @@
 )
 #v(6pt)
 
-== 1. Introducción y Encuadre Teórico-Metodológico del Avance 3
+== Introducción y Encuadre Teórico-Metodológico del Avance 3
 
 El presente módulo constituye la tercera entrega del diagnóstico institucional integral sobre el *Complejo Universitario Regional Zona Atlántica y Sur (CURZAS)* de la *Universidad Nacional del Comahue (UNCo)*. Mientras que el Avance 1 delimitó la matriz burocrática profesional tradicional y sus contrapesos colegiados (Cao & Blutman, 2019; Abal Medina, 2014), y el Avance 2 evaluó la tensión entre silos informáticos y la respuesta reticular de la poligobernanza territorial (Aguilar Villanueva, 2006; Matus, 1993; Bertranou, 2015), el presente *Avance 3* desciende al núcleo de la *microestructura operativa, el diseño formal y los procesos sustantivos de gestión*.
 
@@ -87,7 +87,7 @@ El análisis se estructura sobre las contribuciones de los autores centrales del
 - El enfoque del *Análisis Organizacional y la innovación pública* formulado por el *INAP (1997)* (sobre los aportes de Aldo Schlemenson), analizando las seis dimensiones de la dinámica institucional y el rol del pensamiento lateral.
 - El marco jurídico-administrativo de la *organización del Estado y la Administración Pública Nacional* sistematizado por *Norberto Zeller y Darío Impala (2000)*, delimitando las fronteras entre descentralización institucional, autarquía y desconcentración.
 
-== 2. Eje 1: Relevamiento y Análisis del Organigrama y Manual de Funciones
+== Eje 1: Relevamiento y Análisis del Organigrama y Manual de Funciones
 
 === A. Sustento Normativo y Estructura Formal del CURZAS
 
@@ -227,7 +227,7 @@ Al contrastar el organigrama aprobado estatutariamente con el funcionamiento cot
   *Conclusión:* El organigrama real *no coincide plenamente* con la estructura formal. Mientras que la estructura formal refleja una burocracia departamental estática concebida para la sede Viedma en la década de 1990, la estructura real opera como un *sistema adaptativo híbrido*, recurriendo a coordinaciones de facto, comisiones ad hoc y delegaciones tácitas para gestionar la complejidad territorial y tecnológica contemporánea.
 ]
 
-== 3. Eje 2: Identificación de los Niveles de Centralización y Descentralización
+== Eje 2: Identificación de los Niveles de Centralización y Descentralización
 
 Para abordar la geometría de poder y decisión en el CURZAS, se aplica la distinción entre *centralización, desconcentración y descentralización* formulada por *Zeller e Impala (2000)* e integrada con la teoría de los *ámbitos organizativos (AO)* de *Jorge Hintze (2001)*.
 
@@ -292,7 +292,7 @@ En la administración de los recursos humanos se expresa con máxima nitidez la 
 
 #pagebreak()
 
-== 4. Eje 3: Flujograma de un Proceso Clave del Área de Personal: Circuito de Licencias
+== Eje 3: Flujograma de un Proceso Clave del Área de Personal: Circuito de Licencias
 
 === A. Selección y Justificación del Proceso
 
@@ -455,7 +455,7 @@ Dentro de las competencias sustantivas del Área de Personal, el circuito de *Tr
   \* _Nota Metodológica sobre Plazos:_ Los valores consignados corresponden a *tiempos de referencia hipotéticos* utilizados para modelar el circuito operativo en condiciones regulares de trámite en sede central Viedma, sujetos a validación mediante mediciones de campo.
 ]
 
-== 5. Eje 4: Transición al Ecosistema Electrónico (SUDOCU / GDE / TAD) y Cuellos de Botella
+== Eje 4: Transición al Ecosistema Electrónico (SUDOCU / GDE / TAD) y Cuellos de Botella
 
 === A. Análisis de las Autorizaciones Internas y Sistemas de Gestión Documental
 
@@ -543,7 +543,7 @@ A partir del análisis formal del procedimiento y de la contrastación con diná
 
 #pagebreak()
 
-== 6. Eje 5: Fundamentación Teórica con los Autores de la Unidad 3
+== Eje 5: Fundamentación Teórica con los Autores de la Unidad 3
 
 === A. La Inercia Estructural como Resistencia al Ecosistema Digital (Campos, Carro, Duran y Fernández)
 
@@ -650,7 +650,7 @@ El análisis del CURZAS confirma la tipología de *Jorge Hintze (2001)*:
 - *Coexistencia de Modelos en el Ámbito Organizativo:* En la sede central de Viedma predomina el *modelo funcional* tradicional, articulado por *relaciones jerárquicas* verticales de autoridad (órdenes, circulares, resoluciones).
 - *Transición a Redes Institucionales:* Para operar en el territorio norpatagónico (Línea Sur), el CURZAS se despliega como un *modelo de red institucional*, donde la coordinación no se basa en la jerarquía (el Decano no tiene autoridad sobre los intendentes de la Línea Sur), sino en *relaciones contractuales* (convenios específicos de colaboración) y *mecanismos de cooperación mutua*. La falla del sistema burocrático estriba en pretender gestionar los nodos territoriales con la lógica jerárquica de la sede central, en lugar de dotarlos de plataformas telemáticas descentralizadas y reglas de juego compartidas.
 
-== 7. Eje 6: Propuestas Estratégicas de Rediseño, Precisiones Jurídicas y Matriz de Indicadores
+== Eje 6: Propuestas Estratégicas de Rediseño, Precisiones Jurídicas y Matriz de Indicadores
 
 A partir del diagnóstico situacional y las dimensiones del análisis organizacional, se formulan propuestas de rediseño viables, ajustadas a derecho y respaldadas por una batería de indicadores con supuestos de trabajo explícitos.
 
@@ -687,11 +687,11 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
 #v(2pt)
 
 #table(
-  columns: (85pt, 1.25fr, 75pt, 1.25fr, 75pt),
-  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
-  stroke: 0.45pt + border-subtle,
+  columns: (90pt, 1.25fr, 75pt, 1.25fr, 72pt),
+  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { rgb("#f1f5f9") } else { white },
+  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + accent) } else { (top: 0.75pt + rgb("#cbd5e1"), bottom: 0.25pt + rgb("#e2e8f0"), left: 0.3pt + rgb("#e2e8f0"), right: 0.3pt + rgb("#e2e8f0")) },
   align: (col, row) => if row == 0 { left + horizon } else { left + top },
-  inset: (x: 5pt, y: 3.8pt),
+  inset: (x: 5.5pt, y: 5.5pt),
   table.header(
     text(fill: white, weight: "bold", size: 7.2pt)[Indicador Propuesto],
     text(fill: white, weight: "bold", size: 7.2pt)[Definición Operativa],
@@ -700,7 +700,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     text(fill: white, weight: "bold", size: 7.2pt)[Metas de Rediseño (6 m / 12 m)]
   ),
   [
-    *1. Tiempo Medio de Tramitación (TM-TLM)*
+    *1. Tiempo Medio de Tramitación* \
+    #text(size: 6.8pt, fill: text-muted)[Código: TM-TLM]
   ],
   [
     Días hábiles promedio entre el aviso del agente y su impacto definitivo en SIU-Mapuche.
@@ -716,7 +717,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     • 12m: $<= 3$ días
   ],
   [
-    *2. Duplicación Documental en Papel (TD-DP)*
+    *2. Duplicación Documental en Papel* \
+    #text(size: 6.8pt, fill: text-muted)[Código: TD-DP]
   ],
   [
     Proporción de trámites con certificado físico archivado en legajo de Personal además del digital.
@@ -732,7 +734,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     • 12m: $< 5\%$
   ],
   [
-    *3. Incidencia de Errores de Nómina (TE-ARN)*
+    *3. Incidencia de Errores de Nómina* \
+    #text(size: 6.8pt, fill: text-muted)[Código: TE-ARN]
   ],
   [
     Porcentaje de liquidaciones de sueldo con descuentos indebidos por licencias no cargadas a término.
@@ -748,7 +751,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     • 12m: $< 1\%$
   ],
   [
-    *4. Expedientes en Cola de Firma (VE-BF)*
+    *4. Expedientes en Cola de Firma* \
+    #text(size: 6.8pt, fill: text-muted)[Código: VE-BF]
   ],
   [
     Cantidad mensual promedio de expedientes con permanencia $> 48$ hs en bandejas de autoridades.
@@ -764,7 +768,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     • 12m: 0 exp. (subrogancias)
   ],
   [
-    *5. Resoluciones con Firma Digital (PR-FD)*
+    *5. Resoluciones con Firma Digital* \
+    #text(size: 6.8pt, fill: text-muted)[Código: PR-FD]
   ],
   [
     Porcentaje de resoluciones de personal firmadas con certificado digital de Ley 25.506.
@@ -780,7 +785,8 @@ Para estructurar la futura evaluación empírica del procedimiento, se presenta 
     • 12m: 100%
   ],
   [
-    *6. Cobertura Médica en Nodos (CT-HMN)*
+    *6. Cobertura Médica en Nodos* \
+    #text(size: 6.8pt, fill: text-muted)[Código: CT-HMN]
   ],
   [
     Porcentaje de Nodos con homologación médica descentralizada vía convenio provincial.
