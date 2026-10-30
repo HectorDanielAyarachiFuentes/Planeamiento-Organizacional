@@ -57,6 +57,12 @@ A partir de la conceptualización de Guillermo O'Donnell sistematizada por *Abal
 
 #v(3pt)
 
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 1.1: Mecanismos Institucionales de Rendición de Cuentas (Accountability) en el CURZAS / UNCo] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a O'Donnell (sistematizado por Abal Medina, 2014), Estatuto de la UNCo y Ley 24.156.]
+]
+#v(3pt)
+
 #table(
   columns: (1.1fr, 2.3fr, 1.6fr),
   fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },

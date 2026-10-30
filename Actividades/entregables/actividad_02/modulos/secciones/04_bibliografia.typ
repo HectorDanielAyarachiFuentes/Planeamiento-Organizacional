@@ -2,7 +2,7 @@
 #import "../components/cajas.typ": *
 
 // ==============================================================================
-// HOJA DEDICADA: BIBLIOGRAFÍA Y FUENTES ACADÉMICAS CONSOLIDADAS (AVANCES 1, 2 Y 3)
+// HOJA DEDICADA: BIBLIOGRAFÍA Y FUENTES ACADÉMICAS CONSOLIDADAS (AVANCES 1, 2, 3 Y 4)
 // ==============================================================================
 
 #heading(level: 1, outlined: true, bookmarked: true)[Bibliografía]
@@ -36,20 +36,27 @@
   - *Hintze, Jorge (2001).* _Modelos organizativos y redes institucionales._ Buenos Aires: Biblioteca Virtual TOP (Tecnologías de Organización Pública).
   - *Hintze, Jorge (2018).* _Gestión por procesos y diseño de estructuras en la administración pública: La articulación entre estructuras permanentes y proyectos temporales._ Buenos Aires: TOP / INAP.
   - *INAP — Instituto Nacional de la Administración Pública (1997).* _Organizaciones Públicas: La innovación y el análisis organizacional._ Serie: Documentos de Apoyo a la Capacitación, Tomo 2. Buenos Aires: Dirección Nacional de Estudios y Documentación / Dirección de Estudios e Investigación.
+  - *Makon, Marcos P. (1999).* _Sistemas integrados de administración financiera pública en América Latina._ Santiago de Chile: CEPAL / ILPES, Dirección de Programación del Sector Público, LC/IP/L.156.
+  - *Makon, Marcos (2024).* _Presupuestos por programas y basados en resultados._ Santiago de Chile: CEPAL, Naciones Unidas / 24° Seminario Regional de Política Fiscal.
   - *Matus, Carlos (1993).* _Guía de análisis teórico de la Planificación Estratégica Situacional._ Caracas: Fundación Altadir / Fondo Editorial Altadir.
   - *Matus, Carlos (2007).* _Teoría del juego social._ Lanús: Ediciones de la UNLa.
   - *Noticias Río Negro (2026).* _El CURZAS - UNCo abrió la preinscripción 2026 en Viedma y los 10 nodos regionales._ Disponible en: `https://noticiasrionegro.com.ar/contenido/88152/el-curzas-unco-abrio-la-preinscripcion-2026-en-viedma-y-los-10-nodos-regionales`.
+  - *Oficina Nacional de Presupuesto — ONP / MECON (2019/2024).* _El Sistema Presupuestario Público en la Administración Nacional de la República Argentina._ Buenos Aires: Secretaría de Hacienda, Ministerio de Economía.
   - *Oszlak, Oscar (2020).* _El Estado en la era exponencial: Tecnologías disruptivas y gestión pública._ Buenos Aires: Editorial INAP.
+  - *Schweinheim, Guillermo (2018).* _El sistema de administración financiera en la Argentina: orígenes, desarrollo y escenarios futuros._ Revista Estado Abierto, Vol. 2, N° 1, pp. 115-166.
   - *Universidad Nacional del Comahue (1993/2023).* _Estatuto de la Universidad Nacional del Comahue (Ordenanza N° 470/1993 y modificatorias)._ Neuquén / Viedma.
   - *Zeller, Norberto e Impala, Darío (2000).* _Organización del Estado y de la Administración Pública Nacional de la República Argentina (3ra Versión)._ Buenos Aires: Dirección Nacional de Estudios y Documentación, INAP.
   - *Marco Normativo Nacional e Institucional:*
     - Constitución de la Nación Argentina (Art. 75, inc. 19).
+    - Código Civil y Comercial de la Nación (Arts. 286, 287 y 288 - Instrumentos particulares y firma).
     - Ley de Educación Superior N° 24.521.
-    - Ley de Firma Digital N° 25.506 y decretos reglamentarios.
+    - Ley de Administración Financiera y de los Sistemas de Control del Sector Público Nacional N° 24.156.
     - Ley de Procedimientos Administrativos N° 19.549.
-    - Ley de Administración Financiera del Sector Público Nacional N° 24.156.
+    - Ley de Firma Digital N° 25.506 y decretos reglamentarios.
+    - Ley N° 27.553 de Recetas y Certificados Electrónicos o Digitales.
+    - Ley de Ejercicio de la Medicina N° 17.132.
     - Ley de Acceso a la Información Pública N° 27.275.
     - Decreto PEN N° 1063/2016 (Implementación del Sistema de Gestión Documental Electrónica - GDE y Trámites a Distancia - TAD).
     - Decretos PEN N° 366/2006 y N° 1246/2015 (Convenios Colectivos de Trabajo Nodocente y Docente de Universidades Nacionales).
-    - Resoluciones del Consejo Interuniversitario Nacional (CIN) para la implantación del Sistema Único de Documentación de las Universidades (SUDOCU) y ecosistema SIU (Guaraní, Mapuche, Diaguita, Wichi).
+    - Resoluciones del Consejo Interuniversitario Nacional (CIN) para la implantación del Sistema Único de Documentación de las Universidades (SUDOCU) y ecosistema SIU (Pilagá, Mapuche, Guaraní, Diaguita, Wichi).
 ]

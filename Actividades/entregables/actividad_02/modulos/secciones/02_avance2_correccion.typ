@@ -88,8 +88,11 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
       radius: 4pt,
       inset: (x: 10pt, top: 8pt, bottom: 8pt),
       [
-        #text(weight: "bold", fill: primary, size: 8.8pt)[Estructura Territorial y Oferta Académica del CURZAS en Río Negro]
-        #v(4pt)
+        #align(left)[
+          #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 2.1: Estructura Territorial y Oferta Académica del CURZAS en Río Negro] \
+          #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Memorias Institucionales y Plataforma de Nodos CURZAS.]
+        ]
+        #v(3pt)
         #table(
           columns: (115pt, 1fr),
           stroke: 0.35pt + border-subtle,
@@ -116,7 +119,7 @@ La estructura funcional del CURZAS ratifica plenamente este funcionamiento retic
         #image("../assets/RioNegro.svg", width: 94%)
         #v(3pt)
         #text(size: 7.8pt, fill: text-muted, style: "italic")[
-          *Figura 1:* Mapa de la Provincia de Río Negro con división departamental, cabeceras y Sede Central CURZAS (Viedma), articulando la red de Nodos Regionales y proyectos de extensión territorial.
+          *Figura 2.1:* Mapeo Geográfico y Redes Territoriales de Poligobernanza del CURZAS en la Provincia de Río Negro (Sede Central Viedma y Nodos Regionales).
         ]
       ]
     )
@@ -142,7 +145,13 @@ A efectos de cumplir con el objetivo de evaluar la viabilidad organizativa y las
 
 A partir del cotejo entre las memorias de gestión institucional y las variables críticas del entorno universitario y socio-productivo rionegrino, se presenta la siguiente *Matriz FODA situada*, que cruza los factores endógenos del CURZAS con el contexto actual:
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 2.2: Matriz FODA Situada del CURZAS en el Contexto Regional y Nacional] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia a partir del diagnóstico institucional, normativas y variables del entorno regional.]
+]
+#v(3pt)
 
 #table(
   columns: (1fr, 1fr),
@@ -209,7 +218,13 @@ A partir del cotejo entre las memorias de gestión institucional y las variables
 
 Las decisiones atinentes al empleo público, dotación y condiciones de trabajo en el CURZAS constituyen un campo de fuerzas donde interactúan múltiples actores con intereses y recursos de poder diferenciados:
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 2.3: Mapeo de Actores Estratégicos (Stakeholders) y Relaciones de Poder en el Ámbito de Recursos Humanos] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia sobre la base del modelo de juego social de Carlos Matus y CCT 366/06 y 1246/15.]
+]
+#v(3pt)
 
 #table(
   columns: (1fr, 0.68fr, 0.65fr, 1.8fr, 1.35fr),
@@ -388,8 +403,10 @@ El relevamiento documental y funcional confirma que los planes vigentes son form
   4. *Los trabajadores como actores estratégicos:* En el CURZAS, el personal docente y nodocente son actores estratégicos con representación en el co-gobierno, intereses propios y poder de veto en comisiones paritarias (APUNC y ADUNC). Todo planeamiento exige unir indisolublemente la *viabilidad técnica con la viabilidad política*.
 
 #pagebreak()
-*Matriz de los Cuatro Momentos de la Planificación Estratégica Situacional (PES de Carlos Matus):*
-
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 2.4: Los Cuatro Momentos de la Planificación Estratégica Situacional (PES de Carlos Matus) en el CURZAS] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Matus (1993) y aplicación situada a la realidad universitaria.]
+]
 #v(3pt)
 
 #table(

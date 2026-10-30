@@ -46,6 +46,13 @@ ENTREGABLES = {
         "salidas": [
             WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_03" / "Avance_3_Estructura_Organigrama_Flujograma_GDE_CURZAS_Hector_Ayarachi.pdf"
         ]
+    },
+    "actividad_04": {
+        "nombre": "Actividad 4 — Avance 4: Programación Presupuestaria y Factor Humano (CURZAS)",
+        "entrada": WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "Avance 4 Programación Presupuestaria y Factor Humano (Unidad IV).typ",
+        "salidas": [
+            WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "Avance 4 Programación Presupuestaria y Factor Humano (Unidad IV).pdf"
+        ]
     }
 }
 
@@ -152,7 +159,7 @@ def main():
     )
     parser.add_argument(
         "--target", "-t",
-        choices=["actividad_01", "actividad_02", "actividad_03", "1", "2", "3", "all"],
+        choices=["actividad_01", "actividad_02", "actividad_03", "actividad_04", "1", "2", "3", "4", "all"],
         default="all",
         help="Entregable específico a compilar (por defecto: all)."
     )
@@ -165,6 +172,8 @@ def main():
         filtro = "actividad_02"
     elif args.target in ["3", "actividad_03"]:
         filtro = "actividad_03"
+    elif args.target in ["4", "actividad_04"]:
+        filtro = "actividad_04"
 
     resultado = compilar_todos(filtro=filtro)
     sys.exit(0 if resultado else 1)

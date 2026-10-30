@@ -47,7 +47,13 @@ Es necesario enfatizar que los valores numéricos, porcentajes de error, cantida
 
 En consecuencia, estos valores *no son taxativos ni deben entenderse como datos reales o comprobados de la institución*, dado que no se ha realizado un trabajo de campo empírico para su medición directa. Su validez empírica requeriría una auditoría institucional futura basada en registros administrativos consolidados. Esta distinción transparenta el alcance del trabajo y permite formular una propuesta de control de gestión y modernización procedimental sin atribuir al CURZAS métricas no verificadas.
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.1: Matriz de Deslinde Metodológico: Registro Administrativo vs. Supuestos Analíticos] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia para el encuadre epistemológico y metodológico del diagnóstico.]
+]
+#v(3pt)
 
 #table(
   columns: (1.2fr, 2fr, 1.8fr),
@@ -87,6 +93,22 @@ El análisis se estructura sobre las contribuciones de los autores centrales del
 - El enfoque del *Análisis Organizacional y la innovación pública* formulado por el *INAP (1997)* (sobre los aportes de Aldo Schlemenson), analizando las seis dimensiones de la dinámica institucional y el rol del pensamiento lateral.
 - El marco jurídico-administrativo de la *organización del Estado y la Administración Pública Nacional* sistematizado por *Norberto Zeller y Darío Impala (2000)*, delimitando las fronteras entre descentralización institucional, autarquía y desconcentración.
 
+=== C. Trazabilidad Analítica: Conexión de los Ejes de los Avances 1 y 2 con el Diagnóstico de Procesos y Ecosistema Digital
+
+De cara a la integración metodológica y analítica del informe en un único cuerpo coherente, resulta indispensable garantizar la consistencia en la trazabilidad de los hilos conductores explorados en los Avances 1 y 2, verificando cómo impactan de manera directa en el diagnóstico de la microestructura, los circuitos de personal y la transición al ecosistema digital (SUDOCU / SIU-Mapuche):
+
+1. *La Tensión entre la Autonomía Universitaria y los Sistemas Centrales de Gestión:*
+  En el Avance 1 se fundamentó que la autonomía universitaria consagrada en el Artículo 75 inciso 19 de la Constitución Nacional constituye un principio político de autogobierno democrático y pluralismo, diametralmente opuesto a la descentralización gerencial de la Nueva Gestión Pública (Cao & Blutman, 2019). Esta distinción conceptual se proyecta de manera determinante sobre el diseño de procesos y la soberanía tecnológica: mientras que los ministerios y organismos dependientes del Poder Ejecutivo Nacional fueron forzados a implementar el sistema verticalista GDE (Gestión Documental Electrónica, Decreto PEN N° 1063/2016), el sistema universitario nacional nucleado en el Consejo Interuniversitario Nacional (CIN) defendió su autonomía funcional desarrollando e implementando el sistema *SUDOCU* (Sistema Único de Documentación de las Universidades).
+  SUDOCU fue diseñado específicamente para respetar los procedimientos colegiados, las firmas de autoridades electas y la validez legal interna de las resoluciones de Consejos Directivos y Superior. Sin embargo, en el diagnóstico operativo del CURZAS se advierte la contrapartida de esta conquista autonómica: al interactuar con el ecosistema de la Administración Pública Nacional o provincial (ANSES, ARCA/AFIP, Ministerios de Salud y Educación provinciales) que opera en otros estándares, surge una barrera de interoperabilidad externa que no puede subsanarse mediante directivas unilaterales, obligando al personal de Recursos Humanos a gestionar duplicaciones documentales y revalidaciones periciales en soporte papel.
+
+2. *La Poligobernanza Territorial de los Nodos frente a la Centralidad del Circuito Administrativo:*
+  El Avance 2 evidenció que el CURZAS no puede comprenderse como un edificio cerrado en la capital rionegrina, sino como una *red de poligobernanza reticular integrada por 10 Nodos Regionales* distribuidos a lo largo de la vasta estepa de la Línea Sur (Jacobacci, Maquinchao, Los Menucos, Sierra Colorada, Ramos Mexía, Valcheta) y la Costa Atlántica (San Antonio Oeste, Sierra Grande, Conesa) (Aguilar Villanueva, 2006).
+  No obstante, al analizar el circuito formal de licencias médicas y extraordinarias en el Eje 3, queda al descubierto una profunda contradicción estructural: el procedimiento histórico fue modelado bajo el supuesto de proximidad física a la ventanilla de Viedma (entrega del certificado médico original con firma ológrafa en 48 a 72 horas). Para un docente o nodocente que cumple funciones en Los Menucos (a 400 kilómetros de Viedma) o en San Antonio Oeste (a casi 200 kilómetros), esta exigencia analógica impone una penalización logística gravosa, con riesgo constante de cómputo erróneo de "inasistencias injustificadas". En consecuencia, la plena digitalización a través de *SUDOCU* y la descentralización de la carga en *SIU-Mapuche* no son meras preferencias de modernización informática, sino los dispositivos técnicos e institucionales imprescindibles para hacer viable la *poligobernanza territorial*, transformando los nodos en terminales autogestivas de derechos y superando el aislamiento geográfico.
+
+3. *El Rol de los Trabajadores (Docentes y Nodocentes) como Actores Estratégicos del Cambio:*
+  Recuperando el enfoque de la Planificación Estratégica Situacional (PES) de Carlos Matus y la sociología de las organizaciones de Michel Crozier desarrollados en el Avance 2, los trabajadores universitarios no constituyen engranajes mecánicos o usuarios pasivos de la informática, sino *actores estratégicos dotados de cuotas reales de poder, intereses gremiales y capacidad de resistencia o veto*. El marco laboral del CURZAS se encuentra blindado por el Convenio Colectivo de Trabajo Nodocente (Decreto N° 366/2006) y el Docente (Decreto N° 1246/2015), otorgando a los sindicatos (APUNC y ADUNC) injerencia formal en las Comisiones Paritarias Particulares (COPAR).
+  En el día a día del circuito de personal, ante la falla de integración informática directa entre SUDOCU y SIU-Mapuche, son los propios trabajadores nodocentes del Área de Personal quienes actúan como *"puentes humanos"* indispensables: leen las resoluciones en pantalla, interpretan las fechas y transcriben manualmente cada novedad al liquidador de haberes antes del cierre mensual de Rectorado. Esta mediación humana previene descuentos injustos en los haberes de sus compañeros, encarnando con precisión la *"política de salir del paso"* (*muddling through*) teorizada por John Forester (1984). Por tanto, cualquier propuesta de reingeniería procedimental que ignore la dimensión estratégica del factor humano o prescinda de la negociación paritaria estará condenada a la inercia estructural y al fracaso operativo.
+
 == Eje 1: Relevamiento y Análisis del Organigrama y Manual de Funciones
 
 === A. Sustento Normativo y Estructura Formal del CURZAS
@@ -114,6 +136,12 @@ La estructura formal se divide en cinco niveles jerárquicos y funcionales clara
   - *Dirección de Biblioteca y Centros de Documentación*.
   - *Dirección de Mantenimiento, Obras y Servicios Generales*.
 
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.2: Estructura Orgánica Formal y Misiones Estatutarias del CURZAS (Ordenanza N° 470/1993)] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia sobre la base del Estatuto General de la UNCo y ordenanzas complementarias.]
+]
 #v(3pt)
 
 #table(
@@ -204,7 +232,7 @@ El régimen de funciones del personal se encuentra estrictamente tipificado por 
       #image("/Actividades/material/actividad_03/organigrama.svg", width: 100%)
       #v(2pt)
       #text(size: 7.8pt, fill: text-muted, style: "italic")[
-        *Figura 1:* Organigrama Funcional y Estructural del CURZAS — UNCo: Dependencias Formales (De Jure) vs. Red Territorial Emergente de 10 Nodos Regionales (De Facto) y Área Crítica de Personal.
+        *Figura 3.1:* Organigrama Funcional y Estructural del CURZAS — UNCo (Estructura Formal De Jure vs. Red Territorial Emergente De Facto de 10 Nodos Regionales y Área Crítica de Personal).
       ]
     ]
   )
@@ -231,6 +259,12 @@ Al contrastar el organigrama aprobado estatutariamente con el funcionamiento cot
 
 Para abordar la geometría de poder y decisión en el CURZAS, se aplica la distinción entre *centralización, desconcentración y descentralización* formulada por *Zeller e Impala (2000)* e integrada con la teoría de los *ámbitos organizativos (AO)* de *Jorge Hintze (2001)*.
 
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.3: Geometría Decisional: Centralización, Desconcentración y Redes Territoriales] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia a partir de Zeller e Impala (2000) e integración con la teoría de Ámbitos Organizativos de Hintze (2001).]
+]
 #v(3pt)
 
 #table(
@@ -422,13 +456,21 @@ Dentro de las competencias sustantivas del Área de Personal, el circuito de *Tr
       ]
       #v(4pt)
       #text(size: 7.2pt, fill: text-muted, style: "italic")[
-        *Figura 1:* Mapeo estructurado por carriles (*swimlanes*) del circuito de licencias en el CURZAS (UNCo).
+        *Figura 3.2:* Mapeo Estructurado por Carriles (*swimlanes*) del Circuito de Tramitación de Licencias Médicas en el CURZAS (UNCo).
       ]
     ]
   )
 ]
 
 === C. Matriz Operativa de Etapas, Insumos y Responsables
+
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.4: Matriz Operativa del Circuito de Tramitación de Licencias Médicas (SUDOCU / SIU-Mapuche)] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a la modelación procedimental en el CURZAS.]
+]
+#v(3pt)
 
 #table(
   columns: (45pt, 85pt, 110pt, 100pt, 75pt),
@@ -482,7 +524,13 @@ Para responder a este interrogante, es imperativo establecer una rigurosa *disti
 
 A partir del análisis formal del procedimiento y de la contrastación con dinámicas burocráticas típicas observadas en ámbitos públicos y privados, se plantean como hipótesis analíticas exploratorias *cuatro cuellos de botella críticos* que podrían ralentizar la gestión administrativa:
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.5: Diagnóstico Exploratorio de Cuellos de Botella en la Transición al Ecosistema Digital] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración analítica a partir del modelado del circuito de licencias y patrones de la administración pública.]
+]
+#v(3pt)
 
 #table(
   columns: (1.2fr, 2.2fr, 1.6fr),
@@ -573,7 +621,13 @@ El análisis del comportamiento administrativo en el CURZAS confirma el postulad
 
 Aplicando el marco metodológico del *INAP (1997)* (basado en el modelo de análisis multidimensional de organizaciones públicas y los aportes de Aldo Schlemenson), la problemática del Área de Personal del CURZAS se desagrega en sus dimensiones constitutivas:
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.6: Análisis Multidimensional de la Problemática Organizacional (INAP / Schlemenson)] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Dirección Nacional de Estudios e Investigaciones (INAP, 1997) y Schlemenson.]
+]
+#v(3pt)
 
 #table(
   columns: (95pt, 1.6fr, 1.4fr),
@@ -684,7 +738,13 @@ El pase automático ante demoras debe deslindar con rigor qué actos admiten ele
 
 Para estructurar la futura evaluación empírica del procedimiento, se presenta la siguiente matriz dividida en indicadores propuestos, supuestos de referencia iniciales y métodos de verificación para la construcción de una línea de base comprobada:
 
-#v(2pt)
+#v(3pt)
+
+#align(left)[
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 3.7: Matriz Integral de Indicadores de Gestión para el Rediseño del Procedimiento] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia: supuestos iniciales de referencia y métodos de auditoría para línea de base.]
+]
+#v(3pt)
 
 #table(
   columns: (90pt, 1.25fr, 75pt, 1.25fr, 72pt),
