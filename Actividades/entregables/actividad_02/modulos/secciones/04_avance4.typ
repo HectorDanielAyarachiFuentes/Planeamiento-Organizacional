@@ -53,6 +53,7 @@ El análisis se fundamenta rigurosamente en la bibliografía oficial de la cáte
 3. *Manual del Sistema Presupuestario Público (Oficina Nacional de Presupuesto - ONP / MECON):*
   La Oficina Nacional de Presupuesto establece los *clasificadores presupuestarios homogéneos* que rigen para todo el Sector Público Nacional conforme a la Ley 24.156:
   - *Clasificación Institucional:* Define qué organismo gasta. Las Universidades Nacionales integran el Carácter 2 (Organismos Descentralizados e Instituciones Universitarias) dentro de la Jurisdicción 88 (Ministerio de Capital Humano / Secretaría de Educación - SPU), identificándose a la UNCo como la Entidad 809.
+  - *Clasificación por Fuente de Financiamiento:* Según el clasificador de la ONP, el presupuesto universitario se financia de manera abrumadoramente mayoritaria a través de la *Fuente 11 (Tesoro Nacional)*, que cubre aproximadamente el *98%* del presupuesto ordinario (destinado a la masa salarial y funcionamiento básico), mientras que la *Fuente 12 (Recursos Propios)* representa apenas el *2%* restante (generado por aranceles de carreras de posgrado, diplomaturas y convenios de servicios o transferencias técnicas a terceros). Esta marcada asimetría confirma la extrema dependencia financiera respecto a las transferencias del Estado Nacional.
   - *Clasificación por Objeto del Gasto:* Identifica en qué insumo específico se gasta, agrupado en incisos: Inciso 1 (Gastos en Personal), Inciso 2 (Bienes de Consumo), Inciso 3 (Servicios No Personales), Inciso 4 (Bienes de Uso / Capital) e Inciso 5 (Transferencias / Becas).
   - *Clasificación Programática:* Muestra con qué finalidad de política pública se asigna el gasto, ubicándose a las Universidades en el *Programa 26: "Desarrollo de la Educación Superior"*.
 
@@ -71,34 +72,48 @@ La dimensión presupuestaria no es un compartimento aislado, sino el terreno mat
   ¿Cuál es el presupuesto total asignado al organismo y qué porcentaje se destina al Inciso 1 (Gastos en Personal)?
 ]
 
-A partir del relevamiento de la Ley de Presupuesto General de la Administración Nacional, los decretos de reconducción y prórroga presupuestaria del Poder Ejecutivo Nacional (conforme al Art. 27 de la Ley N° 24.156), los acuerdos de refuerzo presupuestario universitario y las Ordenanzas del Consejo Superior de la UNCo para el ejercicio corriente, se sistematizan los datos económicos estructurales:
+A partir del relevamiento de la planilla oficial de la Ley de Presupuesto General de la Administración Nacional, los decretos de prórroga presupuestaria y las resoluciones de distribución interna del Consejo Superior de la UNCo para el *ejercicio 2025*, se sistematizan los datos económicos estructurales:
 
-1. *El Presupuesto Global Consolidado de la UNCo:*
-  En el marco de la prórroga del presupuesto nacional y las adecuaciones de partidas de personal y funcionamiento otorgadas a las casas de altos estudios, la Universidad Nacional del Comahue administra una masa de crédito presupuestario anualizada que se ubica en el orden de los *\$44.000 a \$48.000 millones de pesos corrientes* (englobando sus 17 unidades académicas y asentamientos distribuidos en Río Negro y Neuquén).
-2. *La Asignación Específica del CURZAS:*
-  De acuerdo con la fórmula de distribución de fondos aprobada por el Consejo Superior de la UNCo, al *Complejo Universitario Regional Zona Atlántica y Sur (CURZAS)* se le asigna aproximadamente entre un *6,2% y un 7,0%* del crédito global de la Universidad. Esto equivale a una partida anual estimada en torno a los *\$2.900 a \$3.250 millones de pesos*.
+1. *El Presupuesto Global Consolidado de la UNCo (Ejercicio 2025) y el Conflicto Universitario:*
+  En la planilla presupuestaria oficial remitida por el Poder Ejecutivo Nacional al Congreso para el ejercicio 2025 (Ministerio de Economía / ONP, Planillas Anexas al Título I, Jurisdicción 88 - Entidad 809 UNCo - Programa 26), se asignó a la Universidad Nacional del Comahue un crédito anualizado consolidado de *\$73.900 millones de pesos*.
+  Este monto oficial contrasta drásticamente con la pauta de necesidades reales: mientras que la UNCo peticionó formalmente ante el Consejo Interuniversitario Nacional (CIN) un requerimiento presupuestario de *\$121.800 millones* para garantizar el funcionamiento operativo y salarios dignos, el proyecto del PEN consolidó un recorte de casi *\$47,9 mil millones*, asignando apenas el *60% de lo requerido*.
+  Al respecto, en su informe oficial brindado ante el Consejo Superior de la UNCo bajo el título _«Con el presupuesto 2025 del gobierno "peligra todo lo que hace la UNCo"»_ (publicado en el portal institucional del CRUB - UNCo, 2024), la rectora *Prof. Beatriz Gentile* denunció:
+  #block(
+    fill: bg-card,
+    stroke: (left: 2.5pt + primary, rest: 0.3pt + border-subtle),
+    inset: (x: 10pt, y: 6pt),
+    radius: (right: 3pt),
+    [
+      #text(size: 8.2pt, style: "italic", fill: text-main)[
+        «Sin la ley de financiamiento para las universidades ante un eventual veto presidencial y con el presupuesto 2025 que propone el Poder Ejecutivo Nacional peligra todo lo que hace la universidad... nos están asignando el 60% de lo que necesitamos y para nosotros eso es una catástrofe. La UNCo propuso un monto de 121,8 mil millones de pesos y en el presupuesto 2025 del gobierno figuran 73,9 mil millones, una diferencia en menos de casi 47,9 mil millones».
+      ]
+    ]
+  )
+  Esta asfixia no constituye un hecho aislado de la UNCo, sino un patrón sistémico documentado en los informes técnicos de la *Oficina de Presupuesto del Congreso (OPC, 2024)*: mientras que la propuesta federal del CIN solicitaba un presupuesto global de *\$7,2 billones* para el conjunto del sistema universitario nacional, el Ejecutivo asignó *\$3,8 billones* (apenas el *54%* de lo peticionado, suprimiendo más de \$3,3 billones). Asimismo, tal como advirtió la rectora Gentile, el proyecto de presupuesto nacional suspende la meta legal de destinar el 6% del PBI a educación (Ley de Educación Nacional N° 26.206) e impide alcanzar el 0,45% del PBI fijado por ley para la función Ciencia y Tecnología, subordinando la inversión en conocimiento al dogma del "déficit cero".
+2. *La Asignación Específica del CURZAS (Ejercicio 2025):*
+  De acuerdo con la pauta histórica y la fórmula de distribución del Consejo Superior de la UNCo (donde al Complejo Universitario Regional Zona Atlántica y Sur le corresponde una participación de aproximadamente el *6,6%* dentro de la franja habitual del 6,2% al 7,0%), la masa presupuestaria anual estimada del CURZAS para el ejercicio 2025 asciende a *\$4.880 millones de pesos* (\$4.880.000.000).
 3. *El Peso Porcentual Hegemónico del Inciso 1 (Gastos en Personal):*
-  El dato estructural más contundente del análisis financiero es que *entre el 89,5% y el 91,2% del presupuesto total asignado al CURZAS se destina con exclusividad al Inciso 1 (Gastos en Personal)*. 
-  Apenas el *8,8% al 10,5% restante* debe distribuirse entre todos los demás gastos imprescindibles para sostener la operatividad cotidiana: mantenimiento edilicio, pago de tarifas de electricidad y gas en el campus de Viedma, alquileres, conectividad de banda ancha, adquisición de insumos de laboratorio e informática, bibliografía y programas de becas estudiantiles.
+  El dato estructural más contundente del análisis financiero es que el *90,2% del presupuesto total asignado al CURZAS (\$4.401.760.000)* se destina con exclusividad al *Inciso 1 (Gastos en Personal)*. 
+  Apenas el *9,8% restante (\$478.240.000)* debe distribuirse entre todos los demás gastos imprescindibles para sostener la operatividad cotidiana de la sede y sus extensiones: mantenimiento edilicio, pago de tarifas de electricidad y gas en el campus de Viedma, alquileres, conectividad de banda ancha satelital, adquisición de insumos de laboratorio e informática, bibliografía y programas de becas estudiantiles.
 
 #v(3pt)
 
 #align(left)[
-  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 4.1: Estructura del Presupuesto Consolidado del CURZAS / UNCo por Inciso de Gasto] \
-  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a la Ley N° 24.156, Ordenanzas presupuestarias del Consejo Superior de la UNCo y clasificadores oficiales de la ONP.]
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 4.1: Estructura del Presupuesto Consolidado del CURZAS / UNCo (Ejercicio 2025)] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a la planilla oficial PEN 2025 (\$73.900 M UNCo), distribución Consejo Superior UNCo (6,6%) y clasificadores ONP.]
 ]
 #v(3pt)
 
 #table(
-  columns: (70pt, 130pt, 90pt, 65pt, 1.4fr),
-  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
+  columns: (65pt, 125pt, 95pt, 60pt, 1.4fr),
+  fill: (col, row) => if row == 0 or row == 6 { primary } else if calc.even(row) { bg-card } else { white },
   stroke: 0.45pt + border-subtle,
-  align: (col, row) => if row == 0 { left + horizon } else { left + top },
+  align: (col, row) => if row == 0 or row == 6 { left + horizon } else { left + top },
   inset: (x: 7pt, y: 5.5pt),
   table.header(
     text(fill: white, weight: "bold", size: 8pt)[Inciso],
     text(fill: white, weight: "bold", size: 8pt)[Denominación Oficial (ONP)],
-    text(fill: white, weight: "bold", size: 8pt)[Monto Anual Est. (CURZAS)\*],
+    text(fill: white, weight: "bold", size: 8pt)[Monto Anual Est. 2025\*],
     text(fill: white, weight: "bold", size: 8pt)[Participación],
     text(fill: white, weight: "bold", size: 8pt)[Impacto Operativo y Diagnóstico Situacional]
   ),
@@ -109,11 +124,11 @@ A partir del relevamiento de la Ley de Presupuesto General de la Administración
     *Gastos en Personal* \
     #text(size: 7pt, fill: text-muted)[(Salarios, cargas sociales, SAC, adicionales)]
   ],
-  [\$ 2.750.000.000],
+  [\$ 4.401.760.000],
   [*90,2 %*],
   [
     #text(size: 7.8pt)[
-      Absorbe la casi totalidad del crédito. Financia la masa salarial de docentes y nodocentes. Incorpora el 40% de Zona Desfavorable Patagónica.
+      Absorbe la casi totalidad del crédito. Financia la masa salarial docente y nodocente. Incorpora el 40% de Zona Desfavorable Patagónica.
     ]
   ],
   [
@@ -121,13 +136,13 @@ A partir del relevamiento de la Ley de Presupuesto General de la Administración
   ],
   [
     *Bienes de Consumo* \
-    #text(size: 7pt, fill: text-muted)[(Papelería, tóner, limpieza, insumos de campo)]
+    #text(size: 7pt, fill: text-muted)[(Papelería, limpieza, insumos de campo/lab)]
   ],
-  [\$ 73.000.000],
+  [\$ 117.120.000],
   [*2,4 %*],
   [
     #text(size: 7.8pt)[
-      Fuerte asfixia inflacionaria. Restringe compra de insumos de laboratorio para carreras de producción agropecuaria e informática.
+      Fuerte asfixia inflacionaria. Restringe compra de insumos para laboratorios y tareas de campo.
     ]
   ],
   [
@@ -137,11 +152,11 @@ A partir del relevamiento de la Ley de Presupuesto General de la Administración
     *Servicios No Personales* \
     #text(size: 7pt, fill: text-muted)[(Luz, gas, internet, fletes, viáticos)]
   ],
-  [\$ 161.000.000],
+  [\$ 258.640.000],
   [*5,3 %*],
   [
     #text(size: 7.8pt)[
-      Partida crítica de funcionamiento. Cubre servicios básicos en campus Viedma y los convenios de conectividad con los 10 nodos de la Línea Sur.
+      Partida crítica de funcionamiento. Cubre servicios básicos en campus Viedma y conectividad con los 10 nodos.
     ]
   ],
   [
@@ -149,13 +164,13 @@ A partir del relevamiento de la Ley de Presupuesto General de la Administración
   ],
   [
     *Bienes de Uso (Capital)* \
-    #text(size: 7pt, fill: text-muted)[(Equipamiento, PC, servidores, obras menores)]
+    #text(size: 7pt, fill: text-muted)[(Equipamiento, PC, servidores, obras)]
   ],
-  [\$ 18.000.000],
+  [\$ 29.280.000],
   [*0,6 %*],
   [
     #text(size: 7.8pt)[
-      Prácticamente paralizado. Retrasa la renovación de servidores para SUDOCU y renovación del parque informático para aulas virtuales.
+      Retrasa renovación de servidores para SUDOCU y parque informático en aulas virtuales.
     ]
   ],
   [
@@ -165,17 +180,32 @@ A partir del relevamiento de la Ley de Presupuesto General de la Administración
     *Transferencias* \
     #text(size: 7pt, fill: text-muted)[(Becas de residencia, transporte y comedor)]
   ],
-  [\$ 46.000.000],
+  [\$ 73.200.000],
   [*1,5 %*],
   [
     #text(size: 7.8pt)[
-      Destinado a bienestar estudiantil. Clave para evitar la deserción de alumnos provenientes de parajes y parajes rurales de la estepa.
+      Destinado a bienestar estudiantil. Clave para evitar la deserción de alumnos de parajes rurales.
     ]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 8pt)[TOTAL]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 8pt)[Crédito Presupuestario Anual Estimado]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 8pt)[\$ 4.880.000.000]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 8pt)[100,0 %]
+  ],
+  [
+    #text(fill: white, size: 7.6pt, style: "italic")[Base total estimada CURZAS (participación 6,6% sobre \$73.900 M de la UNCo).]
   ]
 )
 #v(2pt)
 #text(size: 7.2pt, fill: text-muted, style: "italic")[
-  \* _Nota Metodológica sobre Valores Presupuestarios:_ Los montos absolutos corresponden a estimaciones analíticas basadas en las ejecuciones y refuerzos universitarios de los ejercicios 2024-2026 bajo régimen de prórroga presupuestaria y acuerdos paritarios, preservando con fidelidad rigurosa las proporciones porcentuales oficiales observadas en el sistema universitario nacional.
+  \* _Nota Metodológica sobre Valores Presupuestarios:_ Los montos del ejercicio 2025 se calculan sobre la base oficial asignada por el PEN a la UNCo (\$73.900.000.000) y la cuota de participación histórica del CURZAS (6,6%), aplicando los porcentajes consolidados por inciso del clasificador oficial de la ONP.
 ]
 
 === B. Desglose Estructural del Inciso 1: La Centralidad del Factor Humano
@@ -184,38 +214,40 @@ El análisis del Inciso 1 a la luz de los Convenios Colectivos de Trabajo y la n
 
 1. *El Componente Ineludible de la Zona Desfavorable Patagónica (40%):*
   A diferencia de las universidades radicadas en la región pampeana o centro del país, el CURZAS y la UNCo tienen la obligación legal y convencional de liquidar un *adicional salarial del 40% en concepto de Zona Desfavorable* a la totalidad de sus trabajadores (docentes y nodocentes). Este ítem compensa el costo de vida patagónico, las inclemencias climáticas y el aislamiento territorial. Desde la perspectiva presupuestaria, este suplemento eleva la base financiera de cada cargo, explicando por qué el Inciso 1 supera holgadamente el 90% en la región sur.
-2. *Distribución Retributiva por Estamentos Universitarios:*
-  La masa de recursos del factor humano no se reparte de forma homogénea, sino conforme a las misiones sustantivas de la institución:
+2. *Distribución Retributiva por Estamentos Universitarios (Ejercicio 2025):*
+  La masa de recursos del factor humano (base total de *\$4.401.760.000*) se estructura conforme a las misiones sustantivas de la institución:
 
 #v(3pt)
 
 #align(left)[
-  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 4.2: Distribución Interna del Inciso 1 (Gastos en Personal) por Estamentos y Conceptos] \
-  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a CCT 366/06 (Nodocente), CCT 1246/15 (Docente) y escala salarial universitaria nacional.]
+  #text(weight: "bold", fill: primary, size: 8.8pt)[Tabla 4.2: Desglose Interno del Inciso 1 (Gastos en Personal - Ejercicio 2025)] \
+  #text(size: 7.5pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a CCT 366/06 (Nodocente), CCT 1246/15 (Docente) y base salarial CURZAS 2025 (\$4.401.760.000).]
 ]
 #v(3pt)
 
 #table(
-  columns: (110pt, 80pt, 85pt, 1.6fr),
-  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
+  columns: (105pt, 75pt, 65pt, 95pt, 1.5fr),
+  fill: (col, row) => if row == 0 or row == 5 { primary } else if calc.even(row) { bg-card } else { white },
   stroke: 0.45pt + border-subtle,
-  align: (col, row) => if row == 0 { left + horizon } else { left + top },
-  inset: (x: 7.5pt, y: 5.5pt),
+  align: (col, row) => if row == 0 or row == 5 { left + horizon } else { left + top },
+  inset: (x: 7pt, y: 5.5pt),
   table.header(
-    text(fill: white, weight: "bold", size: 8pt)[Estamento / Sub-partida],
-    text(fill: white, weight: "bold", size: 8pt)[CCT Aplicable],
-    text(fill: white, weight: "bold", size: 8pt)[Participación Est.],
-    text(fill: white, weight: "bold", size: 8pt)[Composición de Cargos y Funciones]
+    text(fill: white, weight: "bold", size: 7.8pt)[Estamento / Sub-partida],
+    text(fill: white, weight: "bold", size: 7.8pt)[CCT Aplicable],
+    text(fill: white, weight: "bold", size: 7.8pt)[Participación],
+    text(fill: white, weight: "bold", size: 7.8pt)[Monto Est. 2025],
+    text(fill: white, weight: "bold", size: 7.8pt)[Composición de Cargos y Funciones]
   ),
   [
     *Personal Docente* \
     #text(size: 7pt, fill: text-muted)[(Planta Permanente e Interina)]
   ],
   [Decreto 1246/2015],
-  [*63,5 %* del Inciso 1],
+  [*63,5 %*],
+  [\$ 2.795.117.600],
   [
     #text(size: 7.8pt)[
-      Cargos de Profesores Titulares, Asociados, Adjuntos, Jefes de Trabajos Prácticos (JTP) y Ayudantes de Primera. Cubre dedicaciones Exclusivas (40 hs), Semiexclusivas (20 hs) y Simples (10 hs) en carreras de grado y posgrado.
+      Titulares, Asociados, Adjuntos, JTP y Ayudantes de Primera (dedicaciones Exclusiva, Semiexclusiva y Simple).
     ]
   ],
   [
@@ -223,10 +255,11 @@ El análisis del Inciso 1 a la luz de los Convenios Colectivos de Trabajo y la n
     #text(size: 7pt, fill: text-muted)[(Planta Permanente y Contratados)]
   ],
   [Decreto 366/2006],
-  [*25,8 %* del Inciso 1],
+  [*25,8 %*],
+  [\$ 1.135.654.080],
   [
     #text(size: 7.8pt)[
-      Escalafón único de 7 categorías en agrupamientos Administrativo, Técnico, Profesional, Asistencial y Mantenimiento/Servicios Generales. Sostiene la gestión de legajos, expedientes, compras y mantenimiento de campus.
+      Categorías 1 a 7 en agrupamientos Administrativo, Técnico, Profesional y Servicios Generales.
     ]
   ],
   [
@@ -234,27 +267,44 @@ El análisis del Inciso 1 a la luz de los Convenios Colectivos de Trabajo y la n
     #text(size: 7pt, fill: text-muted)[(Seguridad Social y Obra Social)]
   ],
   [Leyes Nacionales],
-  [*8,7 %* del Inciso 1],
+  [*8,7 %*],
+  [\$ 382.953.120],
   [
     #text(size: 7.8pt)[
-      Aportes patronales a la ANSES (régimen previsional universitario docente y general nodocente), cuota de obra social universitaria (SOSUNC) y seguro de riesgos de trabajo (ART).
+      Aportes patronales ANSES, cuota SOSUNC (obra social universitaria) y seguro ART.
     ]
   ],
   [
     *Suplementos y Otros* \
     #text(size: 7pt, fill: text-muted)[(Antigüedad, títulos, asignaciones)]
   ],
-  [CCT / Decretos],
-  [*2,0 %* del Inciso 1],
+  [CCT / Normativa],
+  [*2,0 %*],
+  [\$ 88.035.200],
   [
     #text(size: 7.8pt)[
-      Asignaciones familiares por hijo/escolaridad, adicionales por título de posgrado (maestría y doctorado) para docentes y nodocentes, y suplementos por subrogancias.
+      Asignaciones familiares, títulos de posgrado y suplementos por mayor responsabilidad.
     ]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 7.8pt)[TOTAL INCISO 1]
+  ],
+  [
+    #text(fill: white, size: 7.5pt)[Masa Salarial]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 7.8pt)[100,0 %]
+  ],
+  [
+    #text(fill: white, weight: "bold", size: 7.8pt)[\$ 4.401.760.000]
+  ],
+  [
+    #text(fill: white, size: 7.5pt, style: "italic")[Base consolidada del gasto en personal del CURZAS.]
   ]
 )
 
 #callout-dictamen("Dictamen Teórico-Presupuestario del Eje 1 (Schweinheim)")[
-  *Conclusión:* La extrema concentración del gasto en el Inciso 1 (~90%) confirma de manera irrebatible la tesis de *Guillermo Schweinheim (2018)* sobre la *alta rigidez estructural del presupuesto público*. El CURZAS es, por su propia naturaleza formativa y científica, una organización trabajo-intensiva (*labor-intensive*): su insumo principal no son máquinas ni insumos industriales, sino el saber, la docencia y la capacidad administrativa de sus trabajadores. La contracara es la fragilidad operativa: cualquier fluctuación o congelamiento en el 10% restante de funcionamiento pone en riesgo directo la apertura de aulas y la continuidad de las comisiones de estudio en los nodos territoriales.
+  *Conclusión:* La extrema concentración del gasto en el Inciso 1 (90,2% del presupuesto total) confirma de manera irrebatible la tesis de *Guillermo Schweinheim (2018)* sobre la *alta rigidez estructural del presupuesto público*. El CURZAS es, por su propia naturaleza formativa y científica, una organización trabajo-intensiva (*labor-intensive*): su insumo principal no son máquinas ni insumos industriales, sino el saber, la docencia y la capacidad administrativa de sus trabajadores. La contracara es la fragilidad operativa: cualquier fluctuación o congelamiento en el 9,8% restante de funcionamiento pone en riesgo directo la apertura de aulas y la continuidad de las comisiones de estudio en los nodos territoriales.
 ]
 
 #pagebreak()
@@ -356,17 +406,18 @@ Aplicando la metodología de *Marcos Makon (2024)*, el presupuesto del CURZAS se
   ],
   [
     - Asistentes técnicos locales en Nodos.
-    - Viáticos de docentes.
-    - Enlace internet rural.
+    - Viáticos y traslados de docentes.
+    - Conectividad satelital / banda ancha (Inciso 3).
+    - Espacios físicos municipales conveniados.
   ],
   [
-    Talleres productivos en territorio (Valcheta/Conesa); tutorías de carreras a distancia en la Línea Sur.
+    Articulación de poligobernanza con municipios locales; tutorías a distancia y clases híbridas en la estepa; talleres productivos en territorio (Valcheta, Jacobacci, Conesa).
   ],
   [
-    Población rural capacitada; módulos pedagógicos distribuidos en parajes.
+    10 Nodos regionales operativos; población rural capacitada; conectividad y logística costeados con cargo al Inciso 3 (\$258,6 M para todo el CURZAS).
   ],
   [
-    *Inclusión territorial y democratización social* del conocimiento en la estepa rionegrina.
+    *Inclusión territorial y democratización social* de la educación superior en la estepa, superando la brecha geográfica mediante cogestión municipal.
   ],
   [
     *Actividad 04* \
@@ -390,6 +441,13 @@ Aplicando la metodología de *Marcos Makon (2024)*, el presupuesto del CURZAS se
     *Conocimiento científico situado* y soluciones socioambientales para la Patagonia.
   ]
 )
+
+#v(3pt)
+
+#callout("El Impacto Concreto del Financiamiento en la Actividad 03 (Nodos Territoriales y Poligobernanza)")[
+  El análisis programático bajo la metodología de *Marcos Makon* pone de relieve un condicionante estructural crucial: los *10 Nodos Regionales del CURZAS en la Línea Sur y la Costa Atlántica* dependen casi con exclusividad del *Inciso 3 (Servicios No Personales)* para financiar la conectividad a internet de banda ancha satelital, los servicios básicos de los espacios áulicos y los viáticos y movilidad de las comisiones docentes.
+  Dado que la totalidad del Inciso 3 asignado al CURZAS asciende a apenas *\$258.640.000 anuales* para atender de forma conjunta las demandas del campus central de Viedma (electricidad, gas, mantenimiento, telefonía e informática) y de toda la sede, el margen presupuestario remanente para los nodos resulta extraordinariamente exiguo. Esta restricción material demuestra técnicamente la necesidad imperiosa de la *poligobernanza reticular* (analizada en el Avance 2): sin los acuerdos de cooperación y cogestión formalizados con los municipios locales —que aportan los edificios comunales, la energía y el personal de apoyo local—, el CURZAS no podría sostener su despliegue territorial únicamente con sus partidas presupuestarias ordinarias.
+]
 
 #v(3pt)
 
