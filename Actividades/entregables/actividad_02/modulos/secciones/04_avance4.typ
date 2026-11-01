@@ -92,9 +92,22 @@ A partir del relevamiento de la planilla oficial de la Ley de Presupuesto Genera
   Esta asfixia no constituye un hecho aislado de la UNCo, sino un patrón sistémico documentado en los informes técnicos de la *Oficina de Presupuesto del Congreso (OPC, 2024)*: mientras que la propuesta federal del CIN solicitaba un presupuesto global de *\$7,2 billones* para el conjunto del sistema universitario nacional, el Ejecutivo asignó *\$3,8 billones* (apenas el *54%* de lo peticionado, suprimiendo más de \$3,3 billones). Asimismo, tal como advirtió la rectora Gentile, el proyecto de presupuesto nacional suspende la meta legal de destinar el 6% del PBI a educación (Ley de Educación Nacional N° 26.206) e impide alcanzar el 0,45% del PBI fijado por ley para la función Ciencia y Tecnología, subordinando la inversión en conocimiento al dogma del "déficit cero".
 2. *La Asignación Específica del CURZAS (Ejercicio 2025):*
   De acuerdo con la pauta histórica y la fórmula de distribución del Consejo Superior de la UNCo (donde al Complejo Universitario Regional Zona Atlántica y Sur le corresponde una participación de aproximadamente el *6,6%* dentro de la franja habitual del 6,2% al 7,0%), la masa presupuestaria anual estimada del CURZAS para el ejercicio 2025 asciende a *\$4.880 millones de pesos* (\$4.880.000.000).
-3. *El Peso Porcentual Hegemónico del Inciso 1 (Gastos en Personal):*
+3. *El Peso Porcentual Hegemónico del Inciso 1 (Gastos en Personal) y la Doctrina Presupuestaria del CIN:*
   El dato estructural más contundente del análisis financiero es que el *90,2% del presupuesto total asignado al CURZAS (\$4.401.760.000)* se destina con exclusividad al *Inciso 1 (Gastos en Personal)*. 
-  Apenas el *9,8% restante (\$478.240.000)* debe distribuirse entre todos los demás gastos imprescindibles para sostener la operatividad cotidiana de la sede y sus extensiones: mantenimiento edilicio, pago de tarifas de electricidad y gas en el campus de Viedma, alquileres, conectividad de banda ancha satelital, adquisición de insumos de laboratorio e informática, bibliografía y programas de becas estudiantiles.
+  Apenas el *9,8% restante (\$478.240.000)* debe distribuirse entre todos los demás gastos imprescindibles para sostener la operatividad cotidiana de la sede y sus extensiones: mantenimiento edilicio, pago de tarifas de electricidad y gas en el campus de Viedma, alquileres, conectividad de banda ancha satelital con los 10 nodos, adquisición de insumos de laboratorio e informática, bibliografía y programas de becas estudiantiles.
+
+  Esta distribución no constituye una distorsión o anomalía contable aislada del CURZAS: _la relación estructural del 90% destinado al Inciso 1 (Gastos en Personal) y el 10% restante a gastos de funcionamiento se fundamenta en los parámetros históricos de formulación y ejecución presupuestaria establecidos por el Consejo Interuniversitario Nacional (CIN) y documentados en los informes de financiamiento elevados anualmente a la Comisión de Presupuesto y Hacienda del H. Congreso de la Nación_. Al respecto, las autoridades técnicas de la Comisión de Asuntos Económicos del CIN ratificaron ante el Parlamento que:
+  #block(
+    fill: bg-card,
+    stroke: (left: 2.5pt + primary, rest: 0.3pt + border-subtle),
+    inset: (x: 10pt, y: 5.5pt),
+    radius: (right: 3pt),
+    [
+      #text(size: 8.2pt, style: "italic", fill: text-main)[
+        «Históricamente, la metodología presupuestaria universitaria contempla una relación del 90% para salarios (Gastos en Personal - Inciso 1) y de apenas un 10% para gastos de funcionamiento (bienes y servicios) que se rinden de forma periódica» (CIN / Portal Universidad, 2024).
+      ]
+    ]
+  )
 
 #v(3pt)
 
@@ -205,7 +218,7 @@ A partir del relevamiento de la planilla oficial de la Ley de Presupuesto Genera
 )
 #v(2pt)
 #text(size: 7.2pt, fill: text-muted, style: "italic")[
-  \* _Nota Metodológica sobre Valores Presupuestarios:_ Los montos del ejercicio 2025 se calculan sobre la base oficial asignada por el PEN a la UNCo (\$73.900.000.000) y la cuota de participación histórica del CURZAS (6,6%), aplicando los porcentajes consolidados por inciso del clasificador oficial de la ONP.
+  \* _Nota Metodológica sobre Valores Presupuestarios:_ Los montos del ejercicio 2025 se calculan sobre la base oficial asignada por el PEN a la UNCo (\$73.900.000.000) y la cuota de participación histórica del CURZAS (6,6%), aplicando los porcentajes consolidados por inciso del clasificador oficial de la ONP y los parámetros doctrinales de formulación fijados por el Consejo Interuniversitario Nacional (CIN, relación histórica 90% salarios / 10% funcionamiento).
 ]
 
 === B. Desglose Estructural del Inciso 1: La Centralidad del Factor Humano
