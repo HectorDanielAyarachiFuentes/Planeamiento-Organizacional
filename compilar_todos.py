@@ -53,6 +53,13 @@ ENTREGABLES = {
         "salidas": [
             WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "Avance 4 Programación Presupuestaria y Factor Humano (Unidad IV).pdf"
         ]
+    },
+    "actividad_04_preview": {
+        "nombre": "Actividad 4 — Preview Rápido Avance 4 (CURZAS)",
+        "entrada": WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "preview_avance4.typ",
+        "salidas": [
+            WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "preview_avance4.pdf"
+        ]
     }
 }
 
@@ -129,14 +136,15 @@ def compilar_todos(filtro=None):
     if filtro:
         filtro_normalizado = filtro.lower().replace("-", "_")
         for k, v in ENTREGABLES.items():
-            if filtro_normalizado in k or filtro_normalizado in v["nombre"].lower():
+            if filtro_normalizado == k or (filtro_normalizado != "actividad_04" and filtro_normalizado in k) or filtro_normalizado in v["nombre"].lower():
                 objetivos[k] = v
         if not objetivos:
             print(f"⚠️ No se encontró ningún entregable que coincida con: '{filtro}'")
             print(f"   Entregables disponibles: {list(ENTREGABLES.keys())}")
             return False
     else:
-        objetivos = ENTREGABLES
+        # Por defecto compila solo los 4 entregables oficiales consolidados
+        objetivos = {k: v for k, v in ENTREGABLES.items() if not k.endswith("_preview")}
 
     total = len(objetivos)
     for clave, config in objetivos.items():
@@ -159,7 +167,7 @@ def main():
     )
     parser.add_argument(
         "--target", "-t",
-        choices=["actividad_01", "actividad_02", "actividad_03", "actividad_04", "1", "2", "3", "4", "all"],
+        choices=["actividad_01", "actividad_02", "actividad_03", "actividad_04", "actividad_04_preview", "preview", "1", "2", "3", "4", "p", "all"],
         default="all",
         help="Entregable específico a compilar (por defecto: all)."
     )
@@ -174,6 +182,8 @@ def main():
         filtro = "actividad_03"
     elif args.target in ["4", "actividad_04"]:
         filtro = "actividad_04"
+    elif args.target in ["preview", "p", "actividad_04_preview"]:
+        filtro = "actividad_04_preview"
 
     resultado = compilar_todos(filtro=filtro)
     sys.exit(0 if resultado else 1)
