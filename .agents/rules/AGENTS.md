@@ -60,13 +60,16 @@ Planeamiento Organizacional/
 
 ---
 
-## 🔄 3. Flujo de Trabajo para Actividades y Tareas
+## 🔄 3. Flujo de Trabajo Autónomo para Actividades y Tareas (Zero-Friction)
 
-Para cada nueva actividad o trabajo práctico (`actividad_XX`):
-1. **Consigna:** Documento oficial o pautas provistas por los docentes en `Actividades/consigna/actividad_XX/`.
-2. **Material:** Bibliografía de lectura o insumos teóricos en `Actividades/material/actividad_XX/`.
-3. **Desarrollo / Avances:** Borradores, scripts de maquetación y archivos `.typ` de trabajo en `Actividades/avances/actividad_XX/`.
-4. **Entregables Finales:** El archivo `.pdf` definitivo (y su correspondiente `.typ` consolidado) compilado en `Actividades/entregables/actividad_XX/`.
+El agente es responsable de gestionar y desarrollar las actividades de forma **100% autónoma sin requerir que el usuario ejecute scripts manuales ni comandos en terminal**.
+
+Ante cualquier solicitud de nueva actividad (`actividad_XX`):
+1. **Andamiaje Autónomo:** El agente ejecuta internamente `python herramientas/automatizacion/scaffold_actividad.py` para generar directorios, módulos Typst, archivo de preview rápido y registro en `compilar_todos.py`.
+2. **Consigna:** Extraer y estructurar las pautas oficiales en `Actividades/consigna/actividad_XX/`.
+3. **Material Teórico:** Procesar la bibliografía de forma local con los documentos de `Actividades/material/actividad_XX/` y las capacidades de análisis directo de la IA. NotebookLM MCP se consultará **únicamente si el usuario lo solicita de forma expresa**.
+4. **Desarrollo Modular:** Redactar en los módulos correspondientes siguiendo el estándar de 4 bloques (`callout-pregunta` -> Marco Teórico -> Caso CURZAS -> Tabla -> Dictamen).
+5. **Compilación y Entrega:** Compilar de forma autónoma con `compilar_todos.py` y entregar el enlace clickeable directo al PDF final en `Actividades/entregables/actividad_XX/`.
 
 ---
 
