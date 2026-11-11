@@ -75,6 +75,8 @@
   #line(length: 100%, stroke: 0.6pt + accent)
   #v(12pt)
   
+  #show outline.entry.where(level: 1): set block(above: 1.0em)
+  #show outline.entry.where(level: 1): set text(weight: "bold", fill: primary)
   #outline(
     title: none,
     depth: 2,
