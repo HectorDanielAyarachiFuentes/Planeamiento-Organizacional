@@ -60,6 +60,20 @@ ENTREGABLES = {
         "salidas": [
             WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_04" / "preview_avance4.pdf"
         ]
+    },
+    "actividad_05": {
+        "nombre": "Actividad 5 — Avance 5: Sistemas de Control, Tablero de Comando y Evaluación (CURZAS)",
+        "entrada": WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_05" / "Avance 5 Sistemas de Control, Tablero de Comando y Evaluación (Unidad V).typ",
+        "salidas": [
+            WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_05" / "Avance 5 Sistemas de Control, Tablero de Comando y Evaluación (Unidad V).pdf"
+        ]
+    },
+    "actividad_05_preview": {
+        "nombre": "Actividad 5 — Preview Rápido Avance 5 (CURZAS)",
+        "entrada": WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_05" / "preview_avance5.typ",
+        "salidas": [
+            WORKSPACE_ROOT / "Actividades" / "entregables" / "actividad_05" / "preview_avance5.pdf"
+        ]
     }
 }
 
@@ -136,14 +150,14 @@ def compilar_todos(filtro=None):
     if filtro:
         filtro_normalizado = filtro.lower().replace("-", "_")
         for k, v in ENTREGABLES.items():
-            if filtro_normalizado == k or (filtro_normalizado != "actividad_04" and filtro_normalizado in k) or filtro_normalizado in v["nombre"].lower():
+            if filtro_normalizado == k or (not k.endswith("_preview") and (filtro_normalizado in k or filtro_normalizado in v["nombre"].lower())):
                 objetivos[k] = v
         if not objetivos:
             print(f"⚠️ No se encontró ningún entregable que coincida con: '{filtro}'")
             print(f"   Entregables disponibles: {list(ENTREGABLES.keys())}")
             return False
     else:
-        # Por defecto compila solo los 4 entregables oficiales consolidados
+        # Por defecto compila solo los entregables oficiales consolidados
         objetivos = {k: v for k, v in ENTREGABLES.items() if not k.endswith("_preview")}
 
     total = len(objetivos)
@@ -167,7 +181,7 @@ def main():
     )
     parser.add_argument(
         "--target", "-t",
-        choices=["actividad_01", "actividad_02", "actividad_03", "actividad_04", "actividad_04_preview", "preview", "1", "2", "3", "4", "p", "all"],
+        choices=["actividad_01", "actividad_02", "actividad_03", "actividad_04", "actividad_05", "actividad_04_preview", "actividad_05_preview", "preview", "1", "2", "3", "4", "5", "p", "all"],
         default="all",
         help="Entregable específico a compilar (por defecto: all)."
     )
@@ -182,8 +196,12 @@ def main():
         filtro = "actividad_03"
     elif args.target in ["4", "actividad_04"]:
         filtro = "actividad_04"
-    elif args.target in ["preview", "p", "actividad_04_preview"]:
+    elif args.target in ["5", "actividad_05"]:
+        filtro = "actividad_05"
+    elif args.target == "actividad_04_preview":
         filtro = "actividad_04_preview"
+    elif args.target in ["preview", "p", "actividad_05_preview"]:
+        filtro = "actividad_05_preview"
 
     resultado = compilar_todos(filtro=filtro)
     sys.exit(0 if resultado else 1)
