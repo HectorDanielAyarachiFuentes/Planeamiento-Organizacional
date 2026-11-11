@@ -1,6 +1,22 @@
 #import "/Actividades/entregables/actividad_02/modulos/config/estilos.typ": *
 #import "/Actividades/entregables/actividad_02/modulos/components/cajas.typ": *
 
+#set text(font: "Segoe UI", size: 9.2pt, fill: rgb("#24292f"), lang: "es")
+#set par(justify: true, leading: 0.65em)
+#show heading.where(level: 1): it => none
+#show heading.where(level: 2): it => [
+  #v(14pt)
+  #box(rect(width: 3.5pt, height: 10.5pt, fill: accent, radius: 1pt))
+  #h(5pt)
+  #text(weight: "bold", size: 10.5pt, fill: primary)[#it.body]
+  #v(4pt)
+]
+#show heading.where(level: 3): it => [
+  #v(10pt)
+  #text(weight: "bold", size: 9.3pt, fill: primary)[#it.body]
+  #v(3pt)
+]
+
 // ==============================================================================
 // PREVIEW RÁPIDO: AVANCE 5 — SISTEMAS DE CONTROL, TABLERO DE COMANDO Y EVALUACIÓN
 // Compilación ultrarrápida para edición ágil y verificación visual inmediata
