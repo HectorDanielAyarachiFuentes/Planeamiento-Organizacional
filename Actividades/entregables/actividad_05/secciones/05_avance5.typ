@@ -1,6 +1,9 @@
 #import "/Actividades/entregables/actividad_02/modulos/config/estilos.typ": *
 #import "/Actividades/entregables/actividad_02/modulos/components/cajas.typ": *
 
+#show table: set par(justify: false)
+#show table: set text(hyphenate: false)
+
 // ==============================================================================
 // SECCIÓN: AVANCE 5 — SISTEMAS DE CONTROL, TABLERO DE COMANDO Y EVALUACIÓN
 // UNIDAD V — VERSIÓN PRECISA, ACTUALIZADA A OCTUBRE 2026 Y CON CIERRE VISUAL
@@ -78,51 +81,53 @@ En el marco de la *Ley N° 24.156* de Administración Financiera, la *Ley de Edu
 Siguiendo los criterios de pertinencia, validez y economía informativa de *Ramírez (2023)* y la ficha técnica de la *Guía Metodológica de Indicadores (PI-2027)*, se propone un tablero inicial con *4 KPIs* articulados a la matriz insumo-proceso-producto (*Avance 4*) y al ecosistema digital (*Avance 3*):
 
 #v(2pt)
-#align(left)[
-  #text(weight: "bold", fill: primary, size: 8.6pt)[Tabla 5.2: Tablero de Control Preliminar de Eficiencia en Recursos Humanos — CURZAS (UNCo)] \
-  #text(size: 7.4pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Ramírez (2023), Mayne (2016) y Guía Metodológica para Diseño de Indicadores (PI-2027).]
-]
-#v(2pt)
+#block(breakable: false)[
+  #align(left)[
+    #text(weight: "bold", fill: primary, size: 8.6pt)[Tabla 5.2: Tablero de Control Preliminar de Eficiencia en Recursos Humanos — CURZAS (UNCo)] \
+    #text(size: 7.4pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Ramírez (2023), Mayne (2016) y Guía Metodológica para Diseño de Indicadores (PI-2027).]
+  ]
+  #v(2pt)
 
-#table(
-  columns: (62pt, 94pt, 128pt, 72pt, 93pt),
-  fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
-  stroke: 0.45pt + border-subtle,
-  align: left + top,
-  inset: (x: 6pt, y: 5pt),
-  table.header(
-    text(fill: white, weight: "bold", size: 7.6pt)[Código / Tipo],
-    text(fill: white, weight: "bold", size: 7.6pt)[Indicador (KPI)],
-    text(fill: white, weight: "bold", size: 7.6pt)[Fórmula de Cálculo],
-    text(fill: white, weight: "bold", size: 7.6pt)[Base → Meta],
-    text(fill: white, weight: "bold", size: 7.6pt)[Frecuencia y Fuente]
-  ),
-  [*KPI-1* \ #text(size: 7pt, fill: text-muted)[Eficiencia de Procesos]],
-  [*Tiempo Medio de Tramitación de Novedades de Personal*],
-  [(Sumatoria de días hábiles desde alta/licencia en *SUDOCU* hasta impacto en *SIU-Mapuche*) / Total trámites\*],
-  [Base: \~12 días\* \ *Meta: $<=$ 5 días hábiles*],
-  [Mensual \ Logs SUDOCU y SIU-Mapuche],
-  [*KPI-2* \ #text(size: 7pt, fill: text-muted)[Calidad y Control Interno]],
-  [*Tasa de Liquidaciones Sin Observaciones ni Ajustes*],
-  [(Liquidaciones mensuales sin rectificativas ni errores de carga / Total liquidaciones emitidas) × 100],
-  [Base: \~94,0% \ *Meta: $>=$ 99,0%*],
-  [Mensual \ Reportes Personal / UAI / SISAC],
-  [*KPI-3* \ #text(size: 7pt, fill: text-muted)[Eficiencia y Capacitación]],
-  [*Cobertura de Capacitación Digital del Personal (SUDOCU / SIU)*],
-  [(Agentes nodocentes y de nodos certificados en herramientas digitales / Planta activa total) × 100],
-  [Base: \~45,0% \ *Meta: $>=$ 90,0% anual*],
-  [Semestral \ Paritaria / CCT 366/06],
-  [*KPI-4* \ #text(size: 7pt, fill: text-muted)[Contribución Territorial]],
-  [*Índice de Continuidad Docente en Nodos Regionales*],
-  [(Comisiones y tutorías efectivamente sostenidas en los 10 nodos / Comisiones programadas) × 100],
-  [Base: \~82,0% \ *Meta: $>=$ 95,0%*],
-  [Cuatrimestral \ SIU-Guaraní y Coord. Nodos]
-)
-#v(2pt)
-#text(size: 7pt, fill: text-muted)[
-  \* _Nota metodológica y trazabilidad:_ Las líneas base aproximadas #text(style: "normal", weight: "bold")[(\~)] son estimaciones diagnósticas preliminares (Avances 2 y 3) para parametrizar la medición inicial. En KPI-1, la base de #text(style: "normal", weight: "semibold")[\~12 días] refiere al promedio global de novedades de personal (altas, bajas y licencias ordinarias), diferenciándose de la línea base de #text(style: "normal", weight: "semibold")[\~18 días] hábiles estimada en el indicador TM-TLM de la Tabla 3.7 (Avance 3) para licencias médicas complejas con intervención de junta médica.
+  #table(
+    columns: (60pt, 90pt, 127pt, 80pt, 92pt),
+    fill: (col, row) => if row == 0 { primary } else if calc.even(row) { bg-card } else { white },
+    stroke: 0.45pt + border-subtle,
+    align: left + top,
+    inset: (x: 5pt, y: 4pt),
+    table.header(
+      text(fill: white, weight: "bold", size: 7.6pt)[Código / Tipo],
+      text(fill: white, weight: "bold", size: 7.6pt)[Indicador (KPI)],
+      text(fill: white, weight: "bold", size: 7.6pt)[Fórmula de Cálculo],
+      text(fill: white, weight: "bold", size: 7.6pt)[Base → Meta],
+      text(fill: white, weight: "bold", size: 7.6pt)[Frecuencia y Fuente]
+    ),
+    [*KPI-1* \ #text(size: 7pt, fill: text-muted)[Eficiencia de Procesos]],
+    [*Tiempo Medio de Tramitación de Novedades de Personal*],
+    [(Sumatoria de días hábiles desde alta/licencia en *SUDOCU* hasta impacto en *SIU-Mapuche*) / Total trámites\*],
+    [Base: \~12 días\* \ *Meta: $<=$ 5 días hábiles*],
+    [Mensual \ Logs SUDOCU y SIU-Mapuche],
+    [*KPI-2* \ #text(size: 7pt, fill: text-muted)[Calidad y Control Interno]],
+    [*Tasa de Liquidaciones Sin Observaciones ni Ajustes*],
+    [(Liquidaciones mensuales sin rectificativas ni errores de carga / Total liquidaciones emitidas) × 100],
+    [Base: \~94,0% \ *Meta: $>=$ 99,0%*],
+    [Mensual \ Reportes Personal / UAI / SISAC],
+    [*KPI-3* \ #text(size: 7pt, fill: text-muted)[Eficiencia y Capacitación]],
+    [*Cobertura de Capacitación Digital del Personal (SUDOCU / SIU)*],
+    [(Agentes nodocentes y de nodos certificados en herramientas digitales / Planta activa total) × 100],
+    [Base: \~45,0% \ *Meta: $>=$ 90,0% anual*],
+    [Semestral \ Paritaria / CCT 366/06],
+    [*KPI-4* \ #text(size: 7pt, fill: text-muted)[Contribución Territorial]],
+    [*Índice de Continuidad Docente en Nodos Regionales*],
+    [(Comisiones y tutorías efectivamente sostenidas en los 10 nodos / Comisiones programadas) × 100],
+    [Base: \~82,0% \ *Meta: $>=$ 95,0%*],
+    [Cuatrimestral \ SIU-Guaraní y Coord. Nodos]
+  )
+  #v(2pt)
+  #text(size: 6.9pt, fill: text-muted)[
+    \* _Nota metodológica y trazabilidad:_ Las líneas base aproximadas #text(style: "normal", weight: "bold")[(\~)] son estimaciones diagnósticas preliminares (Avances 2 y 3) para parametrizar la medición inicial. En KPI-1, la base de #text(style: "normal", weight: "semibold")[\~12 días] refiere al promedio global de novedades de personal (altas, bajas y licencias ordinarias), diferenciándose de la línea base de #text(style: "normal", weight: "semibold")[\~18 días] hábiles estimada en el indicador TM-TLM de la Tabla 3.7 (Avance 3) para licencias médicas complejas con intervención de junta médica.
+  ]
 ]
-#v(6pt)
+#v(4pt)
 
 // ==============================================================================
 // ESQUEMA VISUAL: FIGURA 5.1 — CIRCUITO DE CONTROL Y RETROALIMENTACIÓN
@@ -133,54 +138,54 @@ Siguiendo los criterios de pertinencia, validez y economía informativa de *Ram�
   fill: bg-card,
   stroke: 0.5pt + border-subtle,
   radius: 5pt,
-  inset: (x: 10pt, y: 9pt),
+  inset: (x: 10pt, y: 7pt),
   [
     #align(center)[
       #text(weight: "bold", fill: primary, size: 8.6pt)[Figura 5.1: Circuito de Control, Auditoría (PAT 2027 / SISAC) y Retroalimentación en el CURZAS] \
       #text(size: 7.3pt, fill: text-muted, style: "italic")[Fuente: Elaboración propia en base a Ramírez (2023), Mayne (2016), Feinstein (2016) y Res. SIGEN N° 311/2026.]
     ]
-    #v(7pt)
+    #v(5pt)
     #table(
       columns: (1fr, 14pt, 1fr, 14pt, 1fr, 14pt, 1fr),
       stroke: (x, y) => if calc.even(x) { 0.8pt + (if x == 6 { accent } else { primary }) } else { none },
       fill: (x, y) => if calc.even(x) { white } else { none },
       align: (x, y) => if calc.even(x) { center + top } else { center + horizon },
-      inset: (x, y) => if calc.even(x) { (x: 5pt, y: 6pt) } else { 0pt },
+      inset: (x, y) => if calc.even(x) { (x: 5pt, y: 5pt) } else { 0pt },
       [
         #text(size: 7.2pt, weight: "bold", fill: primary)[1. OPERACIÓN Y REGISTRO]\
-        #v(3pt)
+        #v(2pt)
         #text(size: 6.8pt, fill: text-main)[Novedades de RR. HH. en *SUDOCU*, nómina en *SIU-Mapuche* y cursadas en *SIU-Guaraní* (Sede + Nodos).]
       ],
       text(size: 11pt, weight: "bold", fill: accent)[→],
       [
         #text(size: 7.2pt, weight: "bold", fill: primary)[2. TABLERO DE COMANDO]\
-        #v(3pt)
+        #v(2pt)
         #text(size: 6.8pt, fill: text-main)[Monitoreo de *4 KPIs* (*Ramírez*): tiempos ($<= 5$d), calidad ($>= 99%$), formación y contribución en nodos (*Mayne*).]
       ],
       text(size: 11pt, weight: "bold", fill: accent)[→],
       [
         #text(size: 7.2pt, weight: "bold", fill: primary)[3. AUDITORÍA Y RIESGOS]\
-        #v(3pt)
+        #v(2pt)
         #text(size: 6.8pt, fill: text-main)[Control *UAI* estatutaria (PAT 2027, *Res. SIGEN 311/2026*), seguimiento en *SISAC* y control externo *AGN*.]
       ],
       text(size: 11pt, weight: "bold", fill: accent)[→],
       [
         #text(size: 7.2pt, weight: "bold", fill: rgb("#9a6e1a"))[4. EVALUACIÓN PRAGMÁTICA]\
-        #v(3pt)
+        #v(2pt)
         #text(size: 6.8pt, fill: text-main)[Aprendizaje institucional (*Feinstein*): ajustes en paritaria *UNCo–APUNC* y apoyo a los 10 Nodos.]
       ]
     )
-    #v(6pt)
-    #rect(width: 100%, fill: bg-dictamen, stroke: (left: 2.5pt + accent, rest: 0.4pt + border-subtle), radius: 3pt, inset: (x: 8pt, y: 5pt))[
+    #v(5pt)
+    #rect(width: 100%, fill: bg-dictamen, stroke: (left: 2.5pt + accent, rest: 0.4pt + border-subtle), radius: 3pt, inset: (x: 8pt, y: 4.5pt))[
       #align(center)[
-        #text(size: 7.1pt, weight: "semibold", fill: primary)[
+        #text(size: 7.0pt, weight: "semibold", fill: primary)[
           ↺ Bucle de Retroalimentación: Los hallazgos del Tablero y las alertas del SISAC retroalimentan la Planificación Situacional (Avance 2), el rediseño de flujos SUDOCU (Avance 3) y la defensa del Inciso 1 / Inciso 3 (Avance 4).
         ]
       ]
     ]
   ]
 )
-#v(4pt)
+#v(3pt)
 
 #callout-dictamen("Dictamen Final de Control y Evaluación (Unidad V)")[
   *Síntesis:* El CURZAS posee una sólida arquitectura de legalidad —respaldada por una *UAI con rango estatutario* única en el país, las nuevas pautas de control sobre personal (*Res. SIGEN N° 311/2026* y sistema *SISAC*) y el control externo de la *AGN*—, pero exhibe un déficit de *evaluación pragmática de gestión* (*Feinstein, 2016*). Implementar el Tablero de Comando y su circuito de retroalimentación permite cerrar la brecha entre la planificación política (*Avance 2*), los procesos digitales (*Avance 3*) y la rigidez presupuestaria del Inciso 1 (*Avance 4*), transformando el control burocrático en aprendizaje institucional continuo al servicio de la comunidad patagónica.
